@@ -1,14 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-  --primary-color: #605DC8;
-  --secondary-color: #8B89E6;
-  --accent-color: #e8e7fa;
-  --shadow-color: #E8E8E8;
+  --primary-color: #4dabf7;       /* Soft blue (matches particles) */
+  --secondary-color: #74b9ff;     /* Lighter blue (matches links) */
+  --accent-color: #f5f6fa;        /* Light grey/off-white for contrast */
+  --shadow-color: #2d3436;        /* Dark grey for shadows (subtle depth) */
+  --background-color: #222222;    /* Dark grey (matches particle background) */
+  --text-color: #ffffff;          /* White text for readability */
 }
+
 button.primary {
-  padding: 10px;
+  padding: 10px 20px;
   border: solid 1px var(--primary-color);
   background: var(--primary-color);
-  color: white;
+  color: var(--text-color);
   border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button.primary:hover {
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
