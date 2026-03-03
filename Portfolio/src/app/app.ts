@@ -16,11 +16,6 @@ import { NgParticlesService, NgxParticlesModule } from "@tsparticles/angular";
       (particlesLoaded)="particlesLoaded($event)"
     ></ngx-particles>
     <main>
-      <a [routerLink]="['/']">
-        <header class="brand-name">
-          <img class="brand-logo" src="/logo.svg" alt="logo" aria-hidden="true" />
-        </header>
-      </a>
       <section class="content">
         <router-outlet />
       </section>

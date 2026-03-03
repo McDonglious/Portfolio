@@ -1,0 +1,48 @@
+.experience {
+  background-color: var(--background-color);
+  color: var(--accent-color);
+  padding: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+.experience h2 {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  border-bottom: 1px solid var(--shadow-color);
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+.experience-item {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-left: 3px solid var(--primary-color);
+  background-color: rgba(34, 34, 34, 0.5);
+  border-radius: 0 8px 8px 0;
+}
+.job-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.job-header h3 {
+  color: var(--primary-color);
+  margin: 0;
+  font-size: 1.3rem;
+}
+.job-company, .job-dates {
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+}
+.job-tasks {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+.job-tasks li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+.job-tasks li::marker {
+  color: var(--primary-color);
+}

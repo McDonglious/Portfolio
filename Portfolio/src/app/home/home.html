@@ -1,12 +1,11 @@
-<section>
-  <form>
-    <input type="text" placeholder="Filter by city" #filter />
-    <button class="primary" type="button" (click)="filterResults(filter.value)">Search</button>
-  </form>
-</section>
-
-<section class="results">
-  @for (housingLocation of filteredLocationList; track $index) {
-    <app-housing-location [housingLocation]="housingLocation" />
-  }
-</section>
+<app-topbar/>
+<app-hero/>
+<app-separator/>
+<app-about/>
+<app-separator/>
+<app-projects/>
+<app-separator/>
+<app-experience/>
+<app-separator/>
+<app-contact/>
+<app-footer/>

@@ -1,13 +1,13 @@
 import { Component, input } from '@angular/core';
-import {HousingLocationInfo} from '../housinglocation';
+import {HousingLocationInfo} from '../tuthousinglocation';
 import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-housing-location',
   imports: [RouterLink],
-  templateUrl: './housing-location.html',
-  styleUrl: './housing-location.scss',
+  templateUrl: './tuthousing-location.html',
+  styleUrl: './tuthousing-location.scss',
 })
-export class HousingLocation {
+export class TuthousingLocation {
   housingLocation = input.required<HousingLocationInfo>();
 }

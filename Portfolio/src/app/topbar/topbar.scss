@@ -1,0 +1,18 @@
+.topbar {
+  background-color: var(--background-color); /* #222222 */
+  color: var(--accent-color); /* #f5f6fa */
+  padding: 2rem 2rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--shadow-color); /* #2d3436 */
+  position: relative;
+  z-index: 10; /* Ensures it stays above other content */
+}
+
+.topbar-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--primary-color); /* #4dabf7 */
+  text-shadow: 0 0 5px rgba(77, 171, 247, 0.3); /* Subtle glow to match the particle theme */
+}

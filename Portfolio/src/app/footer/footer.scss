@@ -1,0 +1,23 @@
+.footer {
+  background-color: var(--background-color); /* #222222 */
+  color: var(--accent-color); /* #f5f6fa */
+  padding: 1.5rem;
+  text-align: center;
+  border-top: 1px solid var(--shadow-color); /* #2d3436 */
+  margin-top: 2rem;
+}
+.footer-links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.footer-link {
+  color: var(--secondary-color); /* #74b9ff */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-link:hover {
+  color: var(--primary-color); /* #4dabf7 */
+  text-decoration: underline;
+}

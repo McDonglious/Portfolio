@@ -1,0 +1,18 @@
+
+<section class="experience">
+  <h2>Experience</h2>
+  @for (job of jobs; track job.title) {
+    <div class="experience-item">
+      <div class="job-header">
+        <h3>{{ job.title }}</h3>
+        <span class="job-company">{{ job.company }}</span>
+        <span class="job-dates">{{ job.dates }}</span>
+      </div>
+      <ul class="job-tasks">
+        @for (task of job.tasks; track task) {
+          <li>{{ task }}</li>
+        }
+      </ul>
+    </div>
+  }
+</section>

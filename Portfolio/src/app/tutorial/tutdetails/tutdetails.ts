@@ -1,17 +1,17 @@
 import {ChangeDetectorRef,Component, inject} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
-import {HousingService} from '../housing';
-import {HousingLocationInfo} from '../housinglocation';
+import {HousingService} from '../../housing';
+import {HousingLocationInfo} from '../tuthousinglocation';
 import {FormControl, FormGroup, ReactiveFormsModule} from '@angular/forms';
 import {JsonPipe} from '@angular/common';
 
 @Component({
-  selector: 'app-details',
+  selector: 'app-tutdetails',
   imports: [ReactiveFormsModule, JsonPipe],
-  templateUrl: './details.html',
-  styleUrl: './details.scss',
+  templateUrl: './tutdetails.html',
+  styleUrl: './tutdetails.scss',
 })
-export class Details {
+export class Tutdetails {
   private readonly changeDetectorRef = inject(ChangeDetectorRef);
   route: ActivatedRoute = inject(ActivatedRoute);
   housingService = inject(HousingService);

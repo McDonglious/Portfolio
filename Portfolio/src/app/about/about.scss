@@ -1,0 +1,37 @@
+.about-me {
+  background-color: var(--background-color); /* #222222 */
+  color: var(--accent-color); /* #f5f6fa */
+  padding: 2rem;
+  max-width: 800px;
+  margin: 10rem auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--shadow-color); /* #2d3436 */
+}
+
+.about-me h2 {
+  color: var(--primary-color); /* #4dabf7 */
+  margin-top: 0;
+  font-size: 1.8rem;
+  border-bottom: 1px solid var(--shadow-color);
+  padding-bottom: 0.5rem;
+}
+
+.about-me p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.about-me em {
+  color: var(--secondary-color); /* #74b9ff */
+  font-style: italic;
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+  float: right;
+  margin-left: 1rem;
+}
