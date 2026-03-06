@@ -17,10 +17,11 @@ import { NgParticlesService, NgxParticlesModule } from "@tsparticles/angular";
     ></ngx-particles>
     <main>
       <section class="content">
-        <router-outlet />
+        <router-outlet/>
       </section>
     </main>
   `,
+  standalone: true,
   styleUrl: './app.css'
 })
 export class App {
@@ -77,18 +78,18 @@ export class App {
           default: OutMode.bounce,
         },
         random: false,
-        speed: 6,
+        speed: 4,
         straight: false,
       },
       number: {
         density: {
           enable: true,
-          area: 800,
+          area: 600,
         },
-        value: 80,
+        value: 40,
       },
       opacity: {
-        value: 0.7, // Slightly more opaque for better visibility
+        value: 0.6, // Slightly more opaque for better visibility
       },
       shape: {
         type: "circle",

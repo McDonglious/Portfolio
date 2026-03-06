@@ -1,9 +1,9 @@
 .about-me {
   background-color: var(--background-color); /* #222222 */
   color: var(--accent-color); /* #f5f6fa */
-  padding: 2rem;
+  padding: 3rem 2rem;
   max-width: 800px;
-  margin: 10rem auto;
+  margin: 2rem auto;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border: 1px solid var(--shadow-color); /* #2d3436 */
@@ -18,8 +18,9 @@
 }
 
 .about-me p {
-  line-height: 1.6;
   margin-bottom: 1rem;
+  line-height: 1.7; /* Slightly more spacing between lines */
+  text-align: justify; /* Optional: for a more polished look */
 }
 
 .about-me em {
@@ -28,8 +29,8 @@
 }
 
 .profile-photo {
-  width: 120px;
-  height: 120px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   border: 2px solid var(--primary-color);
   float: right;

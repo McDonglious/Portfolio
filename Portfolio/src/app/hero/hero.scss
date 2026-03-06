@@ -28,6 +28,10 @@
   font-weight: 400;
 }
 
+.hero p strong {
+  font-weight: 1200;
+}
+
 .button-with-cogs {
   display: flex;
   justify-content: space-between;
@@ -52,12 +56,13 @@
   color: white;
   cursor: pointer;
   transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(77, 171, 247, 0.3);
 }
 
 .hero button.primary:hover {
   background-color: var(--secondary-color);
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(77, 171, 247, 0.6);
 }
 
 @keyframes spin {
