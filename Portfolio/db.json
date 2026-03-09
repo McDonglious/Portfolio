@@ -1,104 +1,289 @@
 {
-  "locations": [
+  "projects": [
     {
-      "id": 0,
-      "name": "Acme Fresh Start Housing",
-      "city": "Chicago",
-      "state": "IL",
-      "photo": "https://angular.dev/assets/images/tutorials/common/bernard-hermant-CLKGGwIBTaY-unsplash.jpg",
-      "availableUnits": 4,
-      "wifi": true,
-      "laundry": true
+      "id": 6,
+      "projectTitle": "Point Cloud Annotation in VR",
+      "images": [
+        { "url": "/project_pictures/Screenshot%202026-03-09%20165603.png", "alt": "Image 1" },
+        { "url": "/project_pictures/Screenshot%202026-03-09%20165903.png", "alt": "Image 2" },
+        { "url": "/project_pictures/Screenshot%202026-03-09%20170004.png", "alt": "Image 3" }
+      ],
+      "projectOverview": "A VR-based system for annotating 3D point clouds, designed to streamline the creation of training data for AI and autonomous vehicles. Users interact with point clouds in a fully immersive 3D space, making the annotation process faster, more intuitive, and more precise.",
+      "projectBackground": "The client needed a more efficient and accurate way to annotate point clouds, which are critical for training AI models in autonomous vehicles. Traditional 2D annotation methods were time-consuming and less intuitive for 3D data. Our solution was to create a VR environment where users could interact with point clouds in a fully immersive 3D space.",
+      "projectFeatures": [
+        { "title": "VR Interaction", "description": "Navigate and interact with point clouds in a fully immersive VR environment." },
+        { "title": "Annotation Tools", "description": "Tools for selecting, labeling, and categorizing points or objects." },
+        { "title": "User-Friendly Interface", "description": "Intuitive controls for navigating and manipulating point clouds." },
+        { "title": "Data Export", "description": "Export annotated data in formats compatible with AI training pipelines." }
+      ],
+      "projectTechnologies": ["VR Development", "Unity", "C#", "3D Rendering", "Point Cloud Processing"],
+      "projectDevelopmentProcess": [
+        "Collaborated with the client to understand their annotation needs and workflows.",
+        "Designed the VR interface and interaction model, creating prototypes for testing.",
+        "Developed the VR environment and annotation tools using Unity and C#.",
+        "Conducted user testing to gather feedback and refine the user experience."
+      ],
+      "projectChallenges": [
+        {
+          "challenge": "Handling Large Point Clouds",
+          "challengeDescription": "Rendering and interacting with large point clouds in VR without performance issues.",
+          "solutionDescription": "Implemented level-of-detail (LOD) techniques and optimized rendering algorithms."
+        },
+        {
+          "challenge": "Precision in VR",
+          "challengeDescription": "Ensuring precise selection and annotation of points in a 3D environment.",
+          "solutionDescription": "Developed custom interaction techniques and tools tailored for point cloud annotation."
+        }
+      ],
+      "projectOutcomes": [
+        { "title": "Efficiency", "description": "Reduced annotation time significantly compared to traditional 2D methods." },
+        { "title": "Accuracy", "description": "Improved annotation accuracy with intuitive 3D interaction." },
+        { "title": "User Experience", "description": "Positive feedback on ease of use and effectiveness of VR tools." }
+      ],
+      "projectLessons": [
+        "Gained experience in developing immersive VR applications and optimizing performance for complex 3D data.",
+        "Learned the importance of user testing and iteration in creating effective VR interfaces.",
+        "Collaborated closely with the client to deliver a solution integrated with their workflows."
+      ]
     },
     {
       "id": 1,
-      "name": "A113 Transitional Housing",
-      "city": "Santa Monica",
-      "state": "CA",
-      "photo": "https://angular.dev/assets/images/tutorials/common/brandon-griggs-wR11KBaB86U-unsplash.jpg",
-      "availableUnits": 0,
-      "wifi": false,
-      "laundry": true
-    },
-    {
-      "id": 2,
-      "name": "Warm Beds Housing Support",
-      "city": "Juneau",
-      "state": "AK",
-      "photo": "https://angular.dev/assets/images/tutorials/common/i-do-nothing-but-love-lAyXdl1-Wmc-unsplash.jpg",
-      "availableUnits": 1,
-      "wifi": false,
-      "laundry": false
-    },
-    {
-      "id": 3,
-      "name": "Homesteady Housing",
-      "city": "Chicago",
-      "state": "IL",
-      "photo": "https://angular.dev/assets/images/tutorials/common/ian-macdonald-W8z6aiwfi1E-unsplash.jpg",
-      "availableUnits": 1,
-      "wifi": true,
-      "laundry": false
-    },
-    {
-      "id": 4,
-      "name": "Happy Homes Group",
-      "city": "Gary",
-      "state": "IN",
-      "photo": "https://angular.dev/assets/images/tutorials/common/krzysztof-hepner-978RAXoXnH4-unsplash.jpg",
-      "availableUnits": 1,
-      "wifi": true,
-      "laundry": false
+      "projectTitle": "Poker Game: Online Multiplayer Poker",
+      "images": [
+        { "url": "/project_pictures/poker%20game%20lobby.png", "alt": "Screen shot of the lobby of the poker game" },
+        { "url": "/project_pictures/poker%20game%20server%20list.png", "alt": "Screenshot of the poker table list" },
+        { "url": "/project_pictures/poker%20game%20game%20screen.png", "alt": "Screenshot of the actual poker game" },
+        { "url": "/project_pictures/poker%20game%20winning%20screen.png", "alt": "Screenshot of the winning/losing screen" },
+        { "url": "/project_pictures/poker%20game%20profile%20page.png", "alt": "Screenshot of the player's profile page" },
+        { "url": "/project_pictures/pokergame%20store.png", "alt": "Screenshot of the store page" }
+      ],
+      "projectOverview": "An online poker platform with .NET 9 backend and React + Vite frontend. Players create accounts, customize profiles, and join tables with configurable buy-ins and blinds. Complex logic handles winner determination and pot distribution.",
+      "projectBackground": "The goal was to create a modern, user-friendly online poker platform with real-time gameplay and robust backend logic. Players can create accounts, customize their profiles, and join tables with friends or other players.",
+      "projectFeatures": [
+        { "title": "User Accounts", "description": "Players create accounts, customize profiles, and manage their funds." },
+        { "title": "Table Creation", "description": "Users can create tables with configurable buy-ins and blind settings." },
+        { "title": "Real-Time Gameplay", "description": "Real-time updates for all players during the game." },
+        { "title": "Winner Logic", "description": "Complex logic to determine winners and distribute pots." }
+      ],
+      "projectTechnologies": [".NET 9", "React", "Vite", "PostgreSQL", "Identity Server", "Google Cloud"],
+      "projectDevelopmentProcess": [
+        "Designed the backend architecture using .NET 9 and PostgreSQL for data storage.",
+        "Developed the frontend using React and Vite for a fast and responsive user experience.",
+        "Implemented real-time gameplay logic and winner determination algorithms.",
+        "Deployed the application on Google Cloud, using buckets for media storage."
+      ],
+      "projectChallenges": [
+        {
+          "challenge": "Real-Time Updates",
+          "challengeDescription": "Ensuring all players receive real-time updates during gameplay without latency.",
+          "solutionDescription": "Implemented efficient state management and real-time communication protocols."
+        },
+        {
+          "challenge": "Complex Winner Logic",
+          "challengeDescription": "Developing accurate and efficient logic to determine winners and distribute pots.",
+          "solutionDescription": "Created modular algorithms to handle different poker scenarios and edge cases."
+        }
+      ],
+      "projectOutcomes": [
+        { "title": "User Engagement", "description": "Players enjoyed the intuitive interface and real-time gameplay." },
+        { "title": "Performance", "description": "Optimized backend logic ensured smooth and responsive gameplay." },
+        { "title": "Scalability", "description": "The system was designed to handle multiple tables and users simultaneously." }
+      ],
+      "projectLessons": [
+        "Gained experience in developing real-time multiplayer applications.",
+        "Learned the importance of modular design for complex game logic.",
+        "Improved skills in deploying and managing cloud-based applications."
+      ]
     },
     {
       "id": 5,
-      "name": "Hopeful Apartment Group",
-      "city": "Oakland",
-      "state": "CA",
-      "photo": "https://angular.dev/assets/images/tutorials/common/r-architecture-JvQ0Q5IkeMM-unsplash.jpg",
-      "availableUnits": 2,
-      "wifi": true,
-      "laundry": true
+      "projectTitle": "Phygital: Digital Polling System",
+      "projectOverview": "A digital polling system built with .NET 8 and Razor Pages, designed to create interactive flows for polls with subjects, sub-subjects, and dynamic question types (open-ended, yes/no, multiple-choice). Admins can build and manage poll flows, while poll takers guide participants through the process.",
+      "projectBackground": "The goal was to modernize traditional polling methods by creating a digital system that supports dynamic question flows, role-based access, and media integration. The system was designed for use in educational and corporate environments.",
+      "projectFeatures": [
+        { "title": "Dynamic Poll Flows", "description": "Admins can create and manage poll flows with subjects and sub-subjects." },
+        { "title": "Role-Based Access", "description": "Different roles for admins, poll takers, and participants with distinct permissions." },
+        { "title": "Media Integration", "description": "Support for images and videos stored in Google Cloud Buckets." },
+        { "title": "Question Types", "description": "Supports open-ended, yes/no, and multiple-choice questions." }
+      ],
+      "projectTechnologies": [".NET 8", "Razor Pages", "PostgreSQL", "Identity Server", "Google Cloud", "Cloud Storage"],
+      "projectDevelopmentProcess": [
+        "Designed the system architecture with .NET 8, Razor Pages, and PostgreSQL.",
+        "Implemented role-based access control using Identity Server.",
+        "Developed the poll flow logic and question types.",
+        "Deployed the application on Google Cloud with media storage via Buckets."
+      ],
+      "projectChallenges": [
+        {
+          "challenge": "Complex Poll Logic",
+          "challengeDescription": "Creating a flexible system to handle dynamic poll flows and question types.",
+          "solutionDescription": "Designed a modular architecture to support various question types and flow configurations."
+        },
+        {
+          "challenge": "Media Handling",
+          "challengeDescription": "Storing and retrieving media files efficiently using Google Cloud Buckets.",
+          "solutionDescription": "Implemented a robust media handling system with optimized upload and retrieval processes."
+        }
+      ],
+      "projectOutcomes": [
+        { "title": "User Adoption", "description": "Successfully adopted by educational institutions for digital polling." },
+        { "title": "Flexibility", "description": "Supports a wide range of polling scenarios with customizable flows." },
+        { "title": "Scalability", "description": "Designed to handle multiple concurrent polls and users." }
+      ],
+      "projectLessons": [
+        "Gained experience in designing and implementing role-based access control systems.",
+        "Learned best practices for media storage and retrieval using cloud services.",
+        "Improved skills in creating dynamic, user-friendly interfaces with Razor Pages."
+      ],
+      "images": [
+        { "id": 1, "url": "/project_pictures/ThemeSelector.png", "alt": "screenshot theme selector" },
+        { "id": 2, "url": "/project_pictures/SimDetail.png", "alt": "screenshot van de simulatie details" },
+        { "id": 3, "url": "/project_pictures/OverzichtNotities.png", "alt": "Overzicht van de notities van de begeleider" },
+        { "id": 3, "url": "/project_pictures/SimulatieOverzicht.png", "alt": "Overzicht van de simulatie van de Poll voor de begeleider" }
+      ]
     },
     {
-      "id": 6,
-      "name": "Seriously Safe Towns",
-      "city": "Oakland",
-      "state": "CA",
-      "photo": "https://angular.dev/assets/images/tutorials/common/phil-hearing-IYfp2Ixe9nM-unsplash.jpg",
-      "availableUnits": 5,
-      "wifi": true,
-      "laundry": true
+      "id": 4,
+      "projectTitle": "Crew Roster: Ship and Crew Management",
+      "projectOverview": "A frontend application for managing ships and crew members, built with Webpack, EJS, and JSON Server. The application demonstrates CRUD operations and dynamic data rendering, allowing users to manage ships, crew members, and their assignments.",
+      "projectBackground": "This project was developed as a proof of concept for managing ship crews and their assignments. The goal was to create a simple yet functional interface for adding, editing, and viewing ships and crew members, with a focus on usability and data organization.",
+      "projectFeatures": [
+        { "title": "Ship Management", "description": "Add, edit, and delete ships, including details like name, type, and capacity." },
+        { "title": "Crew Management", "description": "Manage crew members, including personal details, roles, and assignments to ships." },
+        { "title": "Dynamic Data Rendering", "description": "Real-time updates and rendering of ships and crew data." },
+        { "title": "Responsive Design", "description": "Optimized for use on both desktop and mobile devices." }
+      ],
+      "projectTechnologies": ["JavaScript", "EJS", "Webpack", "JSON Server", "CSS", "HTML5"],
+      "projectDevelopmentProcess": [
+        "Designed the data model for ships and crew members, including their relationships.",
+        "Implemented CRUD operations for ships and crew members using JSON Server as a mock backend.",
+        "Developed the frontend interface with EJS templates and CSS for styling.",
+        "Used Webpack to bundle and optimize the application for performance."
+      ],
+      "projectChallenges": [
+        {
+          "challenge": "Data Relationships",
+          "challengeDescription": "Managing the relationships between ships and crew members in a dynamic interface.",
+          "solutionDescription": "Designed a data structure that clearly links crew members to ships and implemented logic to handle assignments."
+        },
+        {
+          "challenge": "Real-Time Updates",
+          "challengeDescription": "Ensuring the interface updates in real-time as data changes.",
+          "solutionDescription": "Used event listeners and dynamic rendering to keep the interface in sync with the data."
+        }
+      ],
+      "projectOutcomes": [
+        { "title": "Functional Prototype", "description": "Successfully created a working prototype for managing ship crews." },
+        { "title": "User-Friendly Interface", "description": "Intuitive and easy-to-use interface for managing complex data relationships." },
+        { "title": "Learning Experience", "description": "Gained hands-on experience with Webpack, EJS, and JSON Server." }
+      ],
+      "projectLessons": [
+        "Improved understanding of frontend frameworks and templating engines like EJS.",
+        "Learned best practices for organizing and managing data in a frontend application.",
+        "Developed skills in creating responsive and dynamic user interfaces."
+      ],
+      "images": [
+        { "id": 1, "url": "/project_pictures/CrewRosterHome.png", "alt": "Ship Landing page Screenshot" },
+        { "id": 2, "url": "/project_pictures/CrewRosterDetails.png", "alt": "Crew Member and ship Details details" },
+        { "id": 3, "url": "/project_pictures/CrewRosterAdvancedSearch.png", "alt": "Search for ship screen" },
+        { "id": 4, "url": "/project_pictures/CrewRosterSettings.png", "alt": "global styling settings screen" }
+      ]
     },
     {
-      "id": 7,
-      "name": "Hopeful Housing Solutions",
-      "city": "Oakland",
-      "state": "CA",
-      "photo": "https://angular.dev/assets/images/tutorials/common/r-architecture-GGupkreKwxA-unsplash.jpg",
-      "availableUnits": 2,
-      "wifi": true,
-      "laundry": true
+      "id": 3,
+      "projectTitle": "SDM Framework: Custom MVC Framework",
+      "projectOverview": "A custom MVC (Model-View-Controller) framework built with C# and ANTLR4, featuring a Razor-like templating language for dynamic HTML generation. Designed to provide a lightweight alternative to ASP.NET MVC for educational and small-scale projects.",
+      "projectBackground": "This project was developed to explore the inner workings of MVC frameworks and templating engines. The goal was to create a simple yet functional framework that supports routing, controllers, views, and a custom templating language similar to Razor.",
+      "projectFeatures": [
+        { "title": "MVC Architecture", "description": "Implements the Model-View-Controller pattern for separating concerns and organizing code." },
+        { "title": "Custom Templating Language", "description": "A Razor-like templating language for dynamic HTML generation, parsed using ANTLR4." },
+        { "title": "Routing System", "description": "Supports RESTful routing for mapping URLs to controllers and actions." },
+        { "title": "Dependency Injection", "description": "Basic dependency injection for managing service dependencies." }
+      ],
+      "projectTechnologies": ["C#", "ANTLR4", "MVC", ".NET Core"],
+      "projectDevelopmentProcess": [
+        "Designed the framework architecture, including the MVC pattern and routing system.",
+        "Developed a custom templating language and parser using ANTLR4 for dynamic HTML generation.",
+        "Implemented the core MVC components: models, views, controllers, and routing.",
+        "Created a dependency injection system for managing service dependencies."
+      ],
+      "projectChallenges": [
+        {
+          "challenge": "Templating Language",
+          "challengeDescription": "Designing and implementing a custom templating language with syntax similar to Razor.",
+          "solutionDescription": "Used ANTLR4 to create a grammar for the templating language and developed a parser to generate HTML."
+        },
+        {
+          "challenge": "Routing System",
+          "challengeDescription": "Creating a flexible routing system to map URLs to controllers and actions.",
+          "solutionDescription": "Implemented a route parser and dispatcher to handle HTTP requests and invoke the appropriate controllers."
+        }
+      ],
+      "projectOutcomes": [
+        { "title": "Functional Framework", "description": "Successfully created a working MVC framework with a custom templating language." },
+        { "title": "Educational Tool", "description": "Serves as an educational tool for understanding MVC frameworks and templating engines." },
+        { "title": "Lightweight", "description": "Provides a lightweight alternative to ASP.NET MVC for small-scale projects." }
+      ],
+      "projectLessons": [
+        "Gained a deep understanding of MVC frameworks and how they work under the hood.",
+        "Learned how to design and implement a custom templating language using ANTLR4.",
+        "Improved skills in C# and .NET Core development."
+      ],
+      "images": [
+        { "id": 1, "url": "/project_pictures/SDMFrameWork1.png", "alt": "SDM framework test page 1" },
+        { "id": 2, "url": "/project_pictures/SDMFrameWork2.png", "alt": "SDM framework test page 2" },
+        { "id": 3, "url": "/project_pictures/SDMFrameWork3.png", "alt": "SDM framework test page 3" },
+        { "id": 4, "url": "/project_pictures/SDMFrameWork4.png", "alt": "SDM framework test page 4" }
+      ]
     },
     {
-      "id": 8,
-      "name": "Seriously Safe Towns",
-      "city": "Oakland",
-      "state": "CA",
-      "photo": "https://angular.dev/assets/images/tutorials/common/saru-robert-9rP3mxf8qWI-unsplash.jpg",
-      "availableUnits": 10,
-      "wifi": false,
-      "laundry": false
-    },
-    {
-      "id": 9,
-      "name": "Capital Safe Towns",
-      "city": "Portland",
-      "state": "OR",
-      "photo": "https://angular.dev/assets/images/tutorials/common/webaliser-_TPTXZd9mOo-unsplash.jpg",
-      "availableUnits": 6,
-      "wifi": true,
-      "laundry": true
+      "id": 2,
+      "projectTitle": "Portfolio Website",
+      "projectOverview": "A personal portfolio website built with Angular, showcasing projects, skills, and experience. Features a modern design with a particle.js background, responsive layout, and a focus on accessibility and performance.",
+      "projectBackground": "This website was developed to serve as a central hub for my professional work, providing an overview of my projects, skills, and experience. The goal was to create a visually appealing and user-friendly platform to present my work to potential employers and collaborators.",
+      "projectFeatures": [
+        { "title": "Project Showcase", "description": "Detailed pages for each project, including descriptions, technologies used, and carousels for screenshots." },
+        { "title": "Responsive Design", "description": "Optimized for all devices, from desktops to mobile phones." },
+        { "title": "Interactive Elements", "description": "Dynamic components like carousels, particle.js background, and smooth navigation." },
+        { "title": "Accessibility", "description": "Designed with accessibility in mind, ensuring it is usable by everyone." }
+      ],
+      "projectTechnologies": ["Angular", "TypeScript", "tsParticles", "PrimeNG", "HTML5", "CSS3", "JSON Server"],
+      "projectDevelopmentProcess": [
+        "Planned the structure and content of the portfolio, focusing on clarity and user experience.",
+        "Developed the frontend using Angular and TypeScript, with a focus on modularity and reusability.",
+        "Implemented a particle.js background for visual appeal and dynamic carousels for project screenshots.",
+        "Used JSON Server to simulate a backend for project data, allowing for easy updates and maintenance."
+      ],
+      "projectChallenges": [
+        {
+          "challenge": "Dynamic Content Management",
+          "challengeDescription": "Creating a system to easily manage and update project data without modifying the codebase.",
+          "solutionDescription": "Implemented JSON Server to serve project data, allowing for easy updates via a JSON file."
+        },
+        {
+          "challenge": "Performance Optimization",
+          "challengeDescription": "Ensuring fast load times and smooth interactions across all devices.",
+          "solutionDescription": "Optimized images, used lazy loading, and minimized HTTP requests to improve performance."
+        }
+      ],
+      "projectOutcomes": [
+        { "title": "Professional Online Presence", "description": "Established a professional and visually appealing online presence to showcase my work." },
+        { "title": "Easy Maintenance", "description": "Designed the website to be easily updatable, with project data managed via JSON." },
+        { "title": "Positive Feedback", "description": "Received positive feedback on the design, usability, and presentation of projects." }
+      ],
+      "projectLessons": [
+        "Improved skills in Angular and TypeScript, particularly in creating reusable components and services.",
+        "Learned best practices for responsive design and accessibility in web development.",
+        "Gained experience in using JSON Server as a lightweight backend for frontend development."
+      ],
+      "images": [
+        { "id": 1, "url": "/project_pictures/PortfolioBanner.png", "alt": "Screenshot portfolio Banner" },
+        { "id": 2, "url": "/project_pictures/PortfolioAbout.png", "alt": "Screenshot portfolio about section" },
+        { "id": 3, "url": "/project_pictures/PortfolioProjects.png", "alt": "Screenshot portfolio projects" },
+        { "id": 3, "url": "/project_pictures/PortfolioDetails.png", "alt": "Screenshot portfolio projects details" },
+        { "id": 3, "url": "/project_pictures/PortfolioExperience.png", "alt": "Screenshot portfolio Experience" }
+      ]
     }
   ]
 }
+

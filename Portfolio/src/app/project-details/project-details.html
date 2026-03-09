@@ -1,0 +1,94 @@
+<app-topbar/>
+<div class="project-detail">
+  @if (project) {
+
+    <p-carousel
+      [value]="project.images"
+      [numVisible]="1"
+      [numScroll]="1"
+      [circular]="true"
+      [autoplayInterval]="3000"
+      [responsiveOptions]="responsiveOptions"
+    >
+      <ng-template let-image pTemplate="item">
+        <div class="image-container">
+          <img [src]="image.url" [alt]="image.alt" class="carousel-image" />
+        </div>
+      </ng-template>
+    </p-carousel>
+    <h2>{{ project.projectTitle }}</h2>
+    <section class="project-overview">
+      <h3>Project Overview</h3>
+      <p>{{ project.projectOverview }}</p>
+    </section>
+
+    <section class="project-background">
+      <h3>Project Background</h3>
+      <p>{{ project.projectBackground }}</p>
+    </section>
+
+    <section class="project-features">
+      <h3>Key Features</h3>
+      <ul>
+        @for (feature of project.projectFeatures; track feature.title) {
+          <li>
+            <strong>{{ feature.title }}:</strong> {{ feature.description }}
+          </li>
+        }
+      </ul>
+    </section>
+
+    <section class="project-tech">
+      <h3>Technical Implementation</h3>
+      <h4>Technologies Used:</h4>
+      <div class="project-tags">
+        @for (tech of project.projectTechnologies; track tech) {
+          <span class="tag">{{ tech }}</span>
+        }
+      </div>
+      <h4>Development Process:</h4>
+      <ol>
+        @for (step of project.projectDevelopmentProcess; track step) {
+          <li>{{ step }}</li>
+        }
+      </ol>
+    </section>
+
+    <section class="project-challenges">
+      <h3>Challenges and Solutions</h3>
+      <ul>
+        @for (challenge of project.projectChallenges; track challenge.challenge) {
+          <li>
+            <strong>{{ challenge.challenge }}:</strong>
+            <p>Challenge: {{ challenge.challengeDescription }}</p>
+            <p>Solution: {{ challenge.solutionDescription }}</p>
+          </li>
+        }
+      </ul>
+    </section>
+
+    <section class="project-outcomes">
+      <h3>Outcomes and Impact</h3>
+      <ul>
+        @for (outcome of project.projectOutcomes; track outcome.title) {
+          <li>
+            <strong>{{ outcome.title }}:</strong> {{ outcome.description }}
+          </li>
+        }
+      </ul>
+    </section>
+
+    <section class="project-lessons">
+      <h3>Lessons Learned</h3>
+      <ul>
+        @for (lesson of project.projectLessons; track lesson) {
+          <li>{{ lesson }}</li>
+        }
+      </ul>
+    </section>
+  }
+</div>
+<app-footer/>
+
+
+

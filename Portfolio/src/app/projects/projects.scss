@@ -23,11 +23,15 @@
 }
 
 .project-card {
+  display: block; /* Ensures the <a> tag behaves like a block element */
   background-color: rgba(34, 34, 34, 0.7);
   border: 1px solid var(--shadow-color);
   border-radius: 8px;
   padding: 1.5rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-decoration: none; /* Removes underline from the link */
+  color: inherit; /* Ensures text color is inherited from parent */
 }
 
 .project-card:hover {
@@ -35,6 +39,7 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   border-color: var(--primary-color);
 }
+
 
 .project-card h3 {
   color: var(--primary-color);

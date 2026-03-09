@@ -4,15 +4,54 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="775e984b-6d4a-4fad-9503-0a2430c283b8" name="Changes" comment="modified hero-banner to look more striking with a more personalized text.">
+    <list default="true" id="775e984b-6d4a-4fad-9503-0a2430c283b8" name="Changes" comment="replaced place holders in projects and experience with true content.">
+      <change afterPath="$PROJECT_DIR$/Portfolio/public/project_pictures/AddNoteWithValidation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/public/project_pictures/CrewRosterAdvancedSearch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/public/project_pictures/CrewRosterDetails.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/public/project_pictures/CrewRosterHome.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/public/project_pictures/CrewRosterSettings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/public/project_pictures/OverzichtNotities.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/public/project_pictures/PortfolioAbout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/public/project_pictures/PortfolioBanner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/public/project_pictures/PortfolioDetails.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/public/project_pictures/PortfolioExperience.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/public/project_pictures/PortfolioProjects.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/public/project_pictures/SDMFrameWork1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/public/project_pictures/SDMFrameWork2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/public/project_pictures/SDMFrameWork3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/public/project_pictures/SDMFrameWork4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/public/project_pictures/Screenshot 2026-03-09 165603.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/public/project_pictures/Screenshot 2026-03-09 165903.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/public/project_pictures/Screenshot 2026-03-09 170004.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/public/project_pictures/SimDetail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/public/project_pictures/SimulatieOverzicht.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/public/project_pictures/ThemeSelector.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/public/project_pictures/poker game achievements.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/public/project_pictures/poker game create table.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/public/project_pictures/poker game game screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/public/project_pictures/poker game leaderboard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/public/project_pictures/poker game lobby.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/public/project_pictures/poker game login.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/public/project_pictures/poker game profile page.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/public/project_pictures/poker game server list.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/public/project_pictures/poker game starting screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/public/project_pictures/poker game winning screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/public/project_pictures/pokergame store.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/src/app/project-details/project-details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/src/app/project-details/project-details.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/src/app/project-details/project-details.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/src/app/project-details/project-details.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/src/app/project-service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/src/app/project-service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/about/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/about/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/about/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/about/about.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/app.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/contact/contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/contact/contact.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/experience/experience.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/experience/experience.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/hero/hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/hero/hero.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/app.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/app.routes.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Portfolio/src/app/projects/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/projects/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/projects/projects.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/projects/projects.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/projects/projects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/projects/projects.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,35 +93,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JavaScript Debug.localhost:4200.executor&quot;: &quot;Debug&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/portfolio&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.typescriptcompiler&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\portfolio\\Portfolio\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.localhost:4200.executor": "Debug",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "javascript.preferred.runtime.type.id": "node",
+    "last_opened_file_path": "C:/portfolio/Portfolio/public/project_pictures",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.typescriptcompiler",
+    "ts.external.directory.path": "C:\\portfolio\\Portfolio\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\portfolio\Portfolio\public\project_pictures" />
       <recent name="C:\portfolio\Portfolio\public" />
       <recent name="C:\portfolio\portfolio\public\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\portfolio\Portfolio\public\project_pictures" />
       <recent name="C:\portfolio\Portfolio\src\app\tutorial" />
     </key>
   </component>
@@ -118,7 +159,8 @@
       <workItem from="1772656541984" duration="5150000" />
       <workItem from="1772732338678" duration="254000" />
       <workItem from="1772732826498" duration="2027000" />
-      <workItem from="1772739543747" duration="2763000" />
+      <workItem from="1772739543747" duration="8335000" />
+      <workItem from="1773066194052" duration="12782000" />
     </task>
     <task id="LOCAL-00001" summary="initialized angular project structure and added tailwind.">
       <option name="closed" value="true" />
@@ -160,7 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772631044452</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="replaced place holders in projects and experience with true content.">
+      <option name="closed" value="true" />
+      <created>1772789607206</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1772789607206</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,6 +233,7 @@
     <MESSAGE value="Added dynamic particle background with blue and gray color scheme." />
     <MESSAGE value="added sections hero-banner, about me, projects, experience, contacts and footer. will need to review contents and adjust." />
     <MESSAGE value="modified hero-banner to look more striking with a more personalized text." />
-    <option name="LAST_COMMIT_MESSAGE" value="modified hero-banner to look more striking with a more personalized text." />
+    <MESSAGE value="replaced place holders in projects and experience with true content." />
+    <option name="LAST_COMMIT_MESSAGE" value="replaced place holders in projects and experience with true content." />
   </component>
 </project>
