@@ -5,7 +5,7 @@ services:
     image: node:20-alpine
     working_dir: /app
     volumes:
-      - /var/www/portfolio/Portfolio:/app
+      - /var/www/portfolio/Portfolio/dist/Portfolio:/app/dist/Portfolio
     command: npm run serve:ssr  # Or "node dist/Portfolio/server/main.js"
     ports:
       - "4000:4000"
@@ -16,7 +16,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - /var/www/portfolio/nginx.conf:/etc/nginx/conf.d/default.conf
+      - /var/www/Portfolio/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
     depends_on:
       - node
     restart: unless-stopped

@@ -5,9 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="775e984b-6d4a-4fad-9503-0a2430c283b8" name="Changes" comment="Added detail page for each project.">
-      <change afterPath="$PROJECT_DIR$/Portfolio/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Portfolio/nginx/nginx.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/nginx/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/nginx/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/app.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/housing.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/tutorial/tutdetails/tutdetails.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/tutorial/tutdetails/tutdetails.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/tutorial/tutdetails/tutdetails.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/tutorial/tutdetails/tutdetails.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/tutorial/tutdetails/tutdetails.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/tutorial/tuthome/tuthome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/tutorial/tuthome/tuthome.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/tutorial/tuthome/tuthome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/tutorial/tuthome/tuthome.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/tutorial/tuthome/tuthome.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/tutorial/tuthousing-location/tuthousing-location.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/tutorial/tuthousing-location/tuthousing-location.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/tutorial/tuthousing-location/tuthousing-location.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/tutorial/tuthousing-location/tuthousing-location.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/tutorial/tuthousinglocation.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +57,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/McDonglious/Portfolio.git&quot;,
-    &quot;accountId&quot;: &quot;62f73232-5821-48fd-8fba-fb2036cf4ea1&quot;
+    &quot;accountId&quot;: &quot;f7ad27e6-b969-4e11-9aae-250904fa9960&quot;
   }
 }</component>
   <component name="ProblemsViewState">
@@ -50,29 +71,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JavaScript Debug.localhost:4200.executor&quot;: &quot;Debug&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/portfolio/Portfolio/public/project_pictures&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.typescriptcompiler&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\portfolio\\Portfolio\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.localhost:4200.executor": "Debug",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "javascript.preferred.runtime.type.id": "node",
+    "last_opened_file_path": "C:/portfolio/Portfolio/public/project_pictures",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "C:\\Users\\sande\\WebstormProjects\\Portfolio\\Portfolio\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\portfolio\Portfolio\public\project_pictures" />
@@ -97,7 +118,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.31033.133" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.32098.39" />
       </set>
     </attachedChunks>
   </component>
@@ -119,6 +140,8 @@
       <workItem from="1772739543747" duration="8335000" />
       <workItem from="1773066194052" duration="18289000" />
       <workItem from="1773941867214" duration="1016000" />
+      <workItem from="1774367968723" duration="1261000" />
+      <workItem from="1774369297015" duration="2439000" />
     </task>
     <task id="LOCAL-00001" summary="initialized angular project structure and added tailwind.">
       <option name="closed" value="true" />

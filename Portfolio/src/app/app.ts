@@ -1,13 +1,13 @@
 import { Component, signal, Inject, PLATFORM_ID } from '@angular/core';
 import {isPlatformBrowser, NgIf} from '@angular/common';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 import { MoveDirection, OutMode, Container, Engine } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
 import { NgParticlesService, NgxParticlesModule } from "@tsparticles/angular";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink, NgxParticlesModule, NgIf],
+  imports: [RouterOutlet, NgxParticlesModule, NgIf],
   template: `
     <ngx-particles
       *ngIf="isBrowser"
