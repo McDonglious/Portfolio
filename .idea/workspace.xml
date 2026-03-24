@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="775e984b-6d4a-4fad-9503-0a2430c283b8" name="Changes" comment="changed working directory in the deploy.yml to see if it can find the package.json when doing npm install" />
+    <list default="true" id="775e984b-6d4a-4fad-9503-0a2430c283b8" name="Changes" comment="set renderMode to dynamic." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -255,7 +255,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774388692093</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="set renderMode to dynamic.">
+      <option name="closed" value="true" />
+      <created>1774391024236</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1774391024236</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,6 +298,7 @@
     <MESSAGE value="fixed typo in path" />
     <MESSAGE value="added a fix for git in the deploy script" />
     <MESSAGE value="changed working directory in the deploy.yml to see if it can find the package.json when doing npm install" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed working directory in the deploy.yml to see if it can find the package.json when doing npm install" />
+    <MESSAGE value="set renderMode to dynamic." />
+    <option name="LAST_COMMIT_MESSAGE" value="set renderMode to dynamic." />
   </component>
 </project>

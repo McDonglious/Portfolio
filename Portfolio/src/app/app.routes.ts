@@ -16,13 +16,8 @@ export const routes: Routes = [{
     path: 'portfolio/:id',
     component: ProjectDetails,
     data: {
-      // Optional: Explicitly set renderMode to 'prerender'
-      renderMode: 'dynamic',
-      // Define getPrerenderParams here
-      getPrerenderParams: (route: { params: { [x: string]: any; }; }) => {
-        // Return an object with the parameters for prerendering
-        return { id: route.params['id'] };
-      },
+      renderMode: 'server', // Render dynamically
+      // No getPrerenderParams needed
     },
   },
 ];
