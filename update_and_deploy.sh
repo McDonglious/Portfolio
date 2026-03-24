@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /var/www/portfolio/Portfolio
+cd /var/www/Portfolio/Portfolio
 git pull origin main  # Pull the latest code
 npm install           # Install dependencies
 npm run build:ssr     # Rebuild the app

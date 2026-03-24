@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="775e984b-6d4a-4fad-9503-0a2430c283b8" name="Changes" comment="fixes for prerendering dynamic routes.">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/deploy.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/update_and_deploy.sh" afterDir="false" />
+    <list default="true" id="775e984b-6d4a-4fad-9503-0a2430c283b8" name="Changes" comment="Add GitHub Actions deploy workflow">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/update_and_deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/update_and_deploy.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +120,7 @@
       <workItem from="1773066194052" duration="18289000" />
       <workItem from="1773941867214" duration="1016000" />
       <workItem from="1774367968723" duration="1261000" />
-      <workItem from="1774369297015" duration="6338000" />
+      <workItem from="1774369297015" duration="9108000" />
     </task>
     <task id="LOCAL-00001" summary="initialized angular project structure and added tailwind.">
       <option name="closed" value="true" />
@@ -210,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774375304989</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Add GitHub Actions deploy workflow">
+      <option name="closed" value="true" />
+      <created>1774376236297</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1774376236297</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +247,7 @@
     <MESSAGE value="added json-server service to docker-compose" />
     <MESSAGE value="added json-server to the nginx config" />
     <MESSAGE value="fixes for prerendering dynamic routes." />
-    <option name="LAST_COMMIT_MESSAGE" value="fixes for prerendering dynamic routes." />
+    <MESSAGE value="Add GitHub Actions deploy workflow" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add GitHub Actions deploy workflow" />
   </component>
 </project>
