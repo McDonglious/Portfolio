@@ -20,8 +20,8 @@ jobs:
         run: npm install
         working-directory: ./Portfolio
 
-      - name: Build app
-        run: npm run build:ssr
+      - name: Build the project
+        run: npm run build
         working-directory: ./Portfolio
 
       - name: Deploy to server
@@ -31,10 +31,10 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /var/www/Portfolio/Portfolio  # Update this path to match your server
+            cd /var/www/Portfolio/Portfolio
             git config --global --add safe.directory /var/www/Portfolio/Portfolio
             git pull origin main
             npm install
-            npm run build:ssr
+            npm run build
             docker-compose down
             docker-compose up -d
