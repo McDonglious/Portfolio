@@ -21,3 +21,12 @@ services:
       - node
     restart: unless-stopped
 
+  json-server:
+    image: node:20-alpine
+    working_dir: /app
+    volumes:
+      - /var/www/portfolio/Portfolio/db.json:/app/db.json  # Mount your db.json file
+    command: npx json-server --host 0.0.0.0 --watch db.json
+    ports:
+      - "3000:3000"  # Expose json-server on port 3000
+    restart: unless-stopped
