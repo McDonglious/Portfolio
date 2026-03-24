@@ -30,6 +30,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd /var/www/Portfolio/Portfolio
+            git config --global --add safe.directory /var/www/Portfolio
             git pull origin main
             npm install
             npm run build:ssr
