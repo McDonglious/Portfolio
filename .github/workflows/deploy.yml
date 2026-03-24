@@ -18,9 +18,11 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: ./Portfolio
 
       - name: Build app
         run: npm run build:ssr
+        working-directory: ./Portfolio
 
       - name: Deploy to server
         uses: appleboy/ssh-action@v0.1.10
@@ -29,8 +31,8 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /var/www/Portfolio/Portfolio
-            git config --global --add safe.directory /var/www/Portfolio
+            cd /var/www/Portfolio/Portfolio  # Update this path to match your server
+            git config --global --add safe.directory /var/www/Portfolio/Portfolio
             git pull origin main
             npm install
             npm run build:ssr
