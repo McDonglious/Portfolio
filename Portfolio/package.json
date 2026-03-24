@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr": "node dist/Portfolio/server/server.mjs"
+    "build:ssr": "node dist/Portfolio/server/server.mjs"
   },
   "prettier": {
     "printWidth": 100,
