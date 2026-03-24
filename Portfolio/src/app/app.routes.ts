@@ -1,7 +1,6 @@
 import { Routes } from '@angular/router';
 import {Home} from './home/home';
 import {ProjectDetails} from './project-details/project-details';
-import { Type } from '@angular/core';
 
 export const routes: Routes = [{
     path: '',
@@ -14,13 +13,16 @@ export const routes: Routes = [{
     title: 'Projects Details',
   },
   {
-    path: 'projects/:id',
-    loadComponent: () =>
-      import('./project-details/project-details').then(
-        (m) => m.ProjectDetails as Type<unknown>
-      ),
+    path: 'portfolio/:id',
+    component: ProjectDetails,
     data: {
-      prerender: false, // or true with staticParams
+      // Optional: Explicitly set renderMode to 'prerender'
+      renderMode: 'prerender',
+      // Define getPrerenderParams here
+      getPrerenderParams: (route: { params: { [x: string]: any; }; }) => {
+        // Return an object with the parameters for prerendering
+        return { id: route.params['id'] };
+      },
     },
   },
 ];
