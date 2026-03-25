@@ -3,10 +3,10 @@ version: '3.8'
 services:
   node:
     image: node:20-alpine
-    working_dir: /app
+    working_dir: /app/dist/Portfolio
     volumes:
       - /var/www/portfolio/Portfolio/dist/Portfolio:/app/dist/Portfolio
-    command: npm run serve:ssr  # Or "node dist/Portfolio/server/main.js"
+    command: npm run build:ssr  # Or "node dist/Portfolio/server/main.js"
     ports:
       - "4000:4000"
     restart: unless-stopped
