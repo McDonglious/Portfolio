@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="775e984b-6d4a-4fad-9503-0a2430c283b8" name="Changes" comment="added security to the build options and allowed hosts for development.">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/docker-compose.yml" afterDir="false" />
-    </list>
+    <list default="true" id="775e984b-6d4a-4fad-9503-0a2430c283b8" name="Changes" comment="change where the project is build and run while deploying." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -208,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774459738021</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="change where the project is build and run while deploying.">
+      <option name="closed" value="true" />
+      <created>1774461924899</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1774461924899</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,6 +241,7 @@
     <MESSAGE value="adding ng serve command to deploy.yml" />
     <MESSAGE value="made entire project into a volume not just dist folder" />
     <MESSAGE value="added security to the build options and allowed hosts for development." />
-    <option name="LAST_COMMIT_MESSAGE" value="added security to the build options and allowed hosts for development." />
+    <MESSAGE value="change where the project is build and run while deploying." />
+    <option name="LAST_COMMIT_MESSAGE" value="change where the project is build and run while deploying." />
   </component>
 </project>

@@ -36,6 +36,6 @@ jobs:
             git config --global --add safe.directory /var/www/Portfolio/Portfolio
             git pull origin main
             npm install
-            npm run build
+            npm run start
             docker-compose down
             docker-compose up -d
