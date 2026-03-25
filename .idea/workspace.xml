@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="775e984b-6d4a-4fad-9503-0a2430c283b8" name="Changes" comment="added a getPrerenderedParams function, removed static rendering code">
+    <list default="true" id="775e984b-6d4a-4fad-9503-0a2430c283b8" name="Changes" comment="added getPrerenderParams to the correct server configuration file and filled them with 2 ids for now">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/app.routes.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/app.routes.server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/project-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/project-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,7 +298,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774442389840</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="added getPrerenderParams to the correct server configuration file and filled them with 2 ids for now">
+      <option name="closed" value="true" />
+      <created>1774445501084</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1774445501084</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,6 +346,7 @@
     <MESSAGE value="typo fixed" />
     <MESSAGE value="changes to make it use port 2222 for the deployment" />
     <MESSAGE value="added a getPrerenderedParams function, removed static rendering code" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a getPrerenderedParams function, removed static rendering code" />
+    <MESSAGE value="added getPrerenderParams to the correct server configuration file and filled them with 2 ids for now" />
+    <option name="LAST_COMMIT_MESSAGE" value="added getPrerenderParams to the correct server configuration file and filled them with 2 ids for now" />
   </component>
 </project>
