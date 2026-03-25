@@ -13,11 +13,15 @@ export const routes: Routes = [{
     title: 'Projects Details',
   },
   {
-    path: 'portfolio/:id',
-    component: ProjectDetails,
+    path: 'projects/:id',
+    loadChildren: () => import('./project-details/project-details').then(m => m.ProjectDetails),
     data: {
-      renderMode: 'server', // Render dynamically
-      // No getPrerenderParams needed
-    },
-  },
+      // Define prerendering parameters for the route
+      getPrerenderParams: (route: { params: { [x: string]: any } }) =>
+        [
+          { id: route.params['1'] },
+          { id: route.params['2']}
+        ] // Example: Prerender for specific IDs
+    }
+  }
 ];
