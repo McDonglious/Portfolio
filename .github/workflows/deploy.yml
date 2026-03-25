@@ -37,6 +37,5 @@ jobs:
             git pull origin main
             npm install
             npm run build
-            ng serve
             docker-compose down
             docker-compose up -d

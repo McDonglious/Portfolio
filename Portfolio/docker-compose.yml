@@ -6,7 +6,7 @@ services:
     working_dir: /app
     volumes:
       - /var/www/Portfolio/Portfolio:/app  # Maps your project root to /app
-    command: npm run build:ssr  # Or "node dist/Portfolio/server/main.js"
+    command: npm run start
     ports:
       - "4000:4000"
     restart: unless-stopped
