@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="775e984b-6d4a-4fad-9503-0a2430c283b8" name="Changes" comment="path fix" />
+    <list default="true" id="775e984b-6d4a-4fad-9503-0a2430c283b8" name="Changes" comment="checking if anything is in dist" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -328,7 +328,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774638649890</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="checking if anything is in dist">
+      <option name="closed" value="true" />
+      <created>1774638850107</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1774638850107</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,7 +354,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="rebuild angular app from template and implemented the tutorial application." />
     <MESSAGE value="Added dynamic particle background with blue and gray color scheme." />
     <MESSAGE value="added sections hero-banner, about me, projects, experience, contacts and footer. will need to review contents and adjust." />
     <MESSAGE value="modified hero-banner to look more striking with a more personalized text." />
@@ -371,6 +378,7 @@
     <MESSAGE value="still path problem" />
     <MESSAGE value="listening the path where the commands are beeing run" />
     <MESSAGE value="path fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="path fix" />
+    <MESSAGE value="checking if anything is in dist" />
+    <option name="LAST_COMMIT_MESSAGE" value="checking if anything is in dist" />
   </component>
 </project>

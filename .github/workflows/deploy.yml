@@ -25,7 +25,7 @@ jobs:
         working-directory: ./Portfolio
 
       - name: List build output
-        run: ls -la ./Portfolio/dist
+        run: ls -la ./Portfolio
 
       - name: Deploy files to server
         uses: appleboy/scp-action@master
