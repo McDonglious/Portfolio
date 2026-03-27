@@ -24,20 +24,6 @@ jobs:
         run: npm run build --configuration=production
         working-directory: ./Portfolio
 
-      - name: List build output
-        run: ls -la ./Portfolio
-
-      - name: Deploy entire Portfolio to server
-        uses: appleboy/scp-action@master
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: 2222
-          source: "./Portfolio/*"
-          target: "/var/www/Portfolio"
-          rm: true
-
       - name: Restart Docker
         uses: appleboy/ssh-action@master
         with:
@@ -48,4 +34,5 @@ jobs:
           script: |
             cd /var/www/Portfolio/Portfolio
             docker-compose down
+            ng build
             docker-compose up -d
