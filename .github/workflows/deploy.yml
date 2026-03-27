@@ -24,6 +24,9 @@ jobs:
         run: npm run build --configuration=production
         working-directory: ./Portfolio
 
+      - name: List build output
+        run: ls -R .
+
       - name: Deploy files to server
         uses: appleboy/scp-action@master
         with:
@@ -32,8 +35,8 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 2222
           source: |
-            Portfolio/Portfolio/dist/Portfolio/*
-            Portfolio/Portfolio/db.json
+            dist/Portfolio/*
+            db.json
           target: /var/www/Portfolio/Portfolio
           strip_components: 1
 
