@@ -27,18 +27,29 @@ jobs:
       - name: List build output
         run: ls -la ./Portfolio
 
-      - name: Deploy files to server
+      - name: Deploy Angular build
         uses: appleboy/scp-action@master
-
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 2222
-          source: "./Portfolio/dist/Portfolio/* ./Portfolio/db.json"
-          target: /var/www/Portfolio/Portfolio
+          source: "./Portfolio/dist/Portfolio/*"
+          target: "/var/www/Portfolio/Portfolio"
           strip_components: 1
-          rm: true
+          rm: false  # Disable rm for this step to avoid deleting db.json
+
+      - name: Deploy db.json
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 2222
+          source: "./Portfolio/db.json"
+          target: "/var/www/Portfolio/Portfolio"
+          strip_components: 1
+          rm: false
 
       - name: Restart Docker
         uses: appleboy/ssh-action@master
