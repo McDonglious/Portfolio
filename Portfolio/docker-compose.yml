@@ -12,12 +12,11 @@ services:
       - "4000:4000"
     environment:
       - NODE_ENV=production
+      - API_URL=http://json-server:3000  # Add this line!
     restart: unless-stopped
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:4000"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
+    depends_on:
+      json-server:  # Ensure json-server is started first
+        condition: service_healthy
 
   nginx:
     image: nginx:alpine
@@ -39,3 +38,8 @@ services:
     ports:
       - "3000:3000"
     restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
