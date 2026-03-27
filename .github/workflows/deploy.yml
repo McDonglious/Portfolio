@@ -35,8 +35,8 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 2222
           source: "./Portfolio/*"
-          target: "/var/www/Portfolio/"
-          rm: true  # Remove existing files in target
+          target: "/var/www/Portfolio/Portfolio/"  # Updated target
+          rm: false  # Disable rm to avoid permission issues
 
       - name: Restart Docker
         uses: appleboy/ssh-action@master
