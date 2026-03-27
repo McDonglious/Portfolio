@@ -21,7 +21,7 @@ jobs:
         working-directory: ./Portfolio
 
       - name: Build the project
-        run: ng build --configuration=production
+        run: npm run build --configuration=production
         working-directory: ./Portfolio
 
       - name: Deploy files to server
