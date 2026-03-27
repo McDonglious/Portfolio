@@ -1,18 +1,27 @@
 version: '3.8'
 
 services:
+  json-server:
+    image: node:20-alpine
+    working_dir: /app
+    volumes:
+      - /var/www/Portfolio/Portfolio:/app
+    command: npx json-server --watch db.json --port 3000
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+
   node:
     image: node:20-alpine
     working_dir: /app
-    user: "node"
     volumes:
       - /var/www/Portfolio/Portfolio/dist/Portfolio:/app/dist/Portfolio
-    command: node dist/Portfolio/server/server.mjs
+    command: node dist/Portfolio/server/main.server.mjs
     ports:
       - "4000:4000"
     environment:
       - NODE_ENV=production
-      - API_URL=http://json-server:3000  # Add this line!
+      - PORT=4000
     restart: unless-stopped
 
   nginx:
@@ -24,15 +33,4 @@ services:
       - /var/www/Portfolio/Portfolio/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
     depends_on:
       - node
-    restart: unless-stopped
-
-  json-server:
-    image: node:20-alpine
-    working_dir: /app
-    user: "node"
-    volumes:
-      - /var/www/Portfolio/Portfolio/db.json:/app/db.json
-    command: npx json-server --host 0.0.0.0 --watch db.json
-    ports:
-      - "3000:3000"
     restart: unless-stopped
