@@ -72,7 +72,7 @@ jobs:
           port: 2222
           source: "./Portfolio/nginx/nginx.conf"
           target: "/var/www/Portfolio/Portfolio/nginx"
-          strip_components: 3
+          strip_components: 2
           rm: false
 
       - name: Restart Docker
