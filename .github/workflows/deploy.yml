@@ -5,37 +5,30 @@ on:
     branches: [ main ]
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Install Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
-
       - name: Install dependencies
         run: npm install
-        working-directory: ./Portfolio
-
-      - name: Build the project
-        run: npm run build --configuration=production
-        working-directory: ./Portfolio
-
-      - name: Deploy files to server
+      - name: Build Angular
+        run: npm run build -- --configuration=production
+        working-directory: .
+      - name: List build output
+        run: ls -R dist/
+      - name: Deploy via SCP
         uses: appleboy/scp-action@master
         with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: 2222
-          source: |
-            Portfolio/dist/Portfolio/*
-            Portfolio/db.json
-          target: /var/www/Portfolio/Portfolio
-          strip_components: 1
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
+          port: 22
+          source: "dist/Portfolio/*"
+          target: "/var/www/Portfolio/"
 
       - name: Restart Docker
         uses: appleboy/ssh-action@master
