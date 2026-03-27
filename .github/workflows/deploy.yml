@@ -40,7 +40,8 @@ jobs:
           port: 2222
           source: "./Portfolio/*"
           target: "/var/www/Portfolio"
-          rm: false
+          rm: true
+
       - name: Restart Docker
         uses: appleboy/ssh-action@master
         with:

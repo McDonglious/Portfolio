@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="775e984b-6d4a-4fad-9503-0a2430c283b8" name="Changes" comment="fixing paths again" />
+    <list default="true" id="775e984b-6d4a-4fad-9503-0a2430c283b8" name="Changes" comment="fix for nginx">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +37,9 @@
     &quot;accountId&quot;: &quot;62f73232-5821-48fd-8fba-fb2036cf4ea1&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Portfolio/node_modules/@angular/ssr/types/ssr.d.ts" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -97,7 +102,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.31033.133" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.32098.39" />
       </set>
     </attachedChunks>
   </component>
@@ -472,7 +477,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774647043053</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="fix for nginx">
+      <option name="closed" value="true" />
+      <created>1774648135274</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1774648135274</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -490,7 +503,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="attempting to fix weird error in workflow build" />
     <MESSAGE value="cheanged json-server url in healthcheck" />
     <MESSAGE value="fixed path perhaps" />
     <MESSAGE value="trying to debug path problems" />
@@ -515,6 +527,7 @@
     <MESSAGE value="changes to the deployment step" />
     <MESSAGE value="added a step to remove node_modules from the build before deploying" />
     <MESSAGE value="fixing paths again" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing paths again" />
+    <MESSAGE value="fix for nginx" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix for nginx" />
   </component>
 </project>
