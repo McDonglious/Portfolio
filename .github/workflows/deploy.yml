@@ -35,8 +35,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 2222
-          source: |
-            ./Portfolio/dist/Portfolio/*
+          source: "dist/Portfolio/* db.json"
           target: /var/www/Portfolio/Portfolio
           rm: true
 
