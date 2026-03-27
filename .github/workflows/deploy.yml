@@ -32,8 +32,8 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 2222
           source: |
-            Portfolio/dist/Portfolio/*
-            Portfolio/db.json
+            Portfolio/Portfolio/dist/Portfolio/*
+            Portfolio/Portfolio/db.json
           target: /var/www/Portfolio/Portfolio
           strip_components: 1
 
