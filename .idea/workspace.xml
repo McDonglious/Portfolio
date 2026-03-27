@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="775e984b-6d4a-4fad-9503-0a2430c283b8" name="Changes" comment="still path problem" />
+    <list default="true" id="775e984b-6d4a-4fad-9503-0a2430c283b8" name="Changes" comment="path fix" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -312,7 +312,23 @@
       <option name="project" value="LOCAL" />
       <updated>1774638179651</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="listening the path where the commands are beeing run">
+      <option name="closed" value="true" />
+      <created>1774638295127</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1774638295127</updated>
+    </task>
+    <task id="LOCAL-00026" summary="path fix">
+      <option name="closed" value="true" />
+      <created>1774638649890</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1774638649890</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,7 +346,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="initialized angular project structure and added tailwind." />
     <MESSAGE value="rebuild angular app from template and implemented the tutorial application." />
     <MESSAGE value="Added dynamic particle background with blue and gray color scheme." />
     <MESSAGE value="added sections hero-banner, about me, projects, experience, contacts and footer. will need to review contents and adjust." />
@@ -354,6 +369,8 @@
     <MESSAGE value="fixed path perhaps" />
     <MESSAGE value="trying to debug path problems" />
     <MESSAGE value="still path problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="still path problem" />
+    <MESSAGE value="listening the path where the commands are beeing run" />
+    <MESSAGE value="path fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="path fix" />
   </component>
 </project>
