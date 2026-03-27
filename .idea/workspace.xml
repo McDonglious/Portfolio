@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="775e984b-6d4a-4fad-9503-0a2430c283b8" name="Changes" comment="changes to the deployment step" />
+    <list default="true" id="775e984b-6d4a-4fad-9503-0a2430c283b8" name="Changes" comment="added a step to remove node_modules from the build before deploying">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -456,7 +458,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774646117237</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="added a step to remove node_modules from the build before deploying">
+      <option name="closed" value="true" />
+      <created>1774646423991</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1774646423991</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -474,7 +484,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed typo in file and directory name" />
     <MESSAGE value="changes to the workflow to try and fix the problems we whur having" />
     <MESSAGE value="attempting to fix weird error in workflow build" />
     <MESSAGE value="cheanged json-server url in healthcheck" />
@@ -499,6 +508,7 @@
     <MESSAGE value="i think one more strip components" />
     <MESSAGE value="using scp to copy the whole project to the server" />
     <MESSAGE value="changes to the deployment step" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes to the deployment step" />
+    <MESSAGE value="added a step to remove node_modules from the build before deploying" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a step to remove node_modules from the build before deploying" />
   </component>
 </project>

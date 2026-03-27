@@ -39,7 +39,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 2222
           source: "./Portfolio/*"
-          target: "/var/www/Portfolio/Portfolio"
+          target: "/var/www/Portfolio"
           rm: false
       - name: Restart Docker
         uses: appleboy/ssh-action@master
