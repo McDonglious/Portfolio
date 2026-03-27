@@ -48,7 +48,7 @@ jobs:
           port: 2222
           source: "./Portfolio/db.json"
           target: "/var/www/Portfolio/Portfolio"
-          strip_components: 1
+          strip_components: 2
           rm: false
 
       - name: Deploy docker-compose
@@ -60,7 +60,7 @@ jobs:
           port: 2222
           source: "./Portfolio/docker-compose.yml"
           target: "/var/www/Portfolio/Portfolio"
-          strip_components: 1
+          strip_components: 2
           rm: false
 
       - name: Deploy nginx.conf
