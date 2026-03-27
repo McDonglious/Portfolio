@@ -27,6 +27,10 @@ jobs:
       - name: List build output
         run: ls -la ./Portfolio
 
+      - name: Remove node_modules
+        run: rm -rf ./Portfolio/node_modules
+        working-directory: ./Portfolio
+
       - name: Deploy entire Portfolio to server
         uses: appleboy/scp-action@master
         with:
@@ -35,9 +39,8 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 2222
           source: "./Portfolio/*"
-          target: "/var/www/Portfolio/Portfolio/"  # Updated target
-          rm: false  # Disable rm to avoid permission issues
-
+          target: "/var/www/Portfolio/Portfolio"
+          rm: false
       - name: Restart Docker
         uses: appleboy/ssh-action@master
         with:
