@@ -35,7 +35,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 2222
           source: "./Portfolio/dist/Portfolio/*"
-          target: "/var/www/Portfolio"
+          target: "/var/www/Portfolio/Portfolio"
           strip_components: 1
           rm: false  # Disable rm for this step to avoid deleting db.json
 
@@ -47,7 +47,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 2222
           source: "./Portfolio/db.json"
-          target: "/var/www/Portfolio"
+          target: "/var/www/Portfolio/Portfolio"
           strip_components: 1
           rm: false
 
@@ -59,7 +59,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 2222
           source: "./Portfolio/docker-compose.yml"
-          target: "/var/www/Portfolio"
+          target: "/var/www/Portfolio/Portfolio"
           strip_components: 1
           rm: false
 
@@ -71,7 +71,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 2222
           source: "./Portfolio/nginx/nginx.conf"
-          target: "/var/www/Portfolio"
+          target: "/var/www/Portfolio/Portfolio/nginx"
           strip_components: 1
           rm: false
 
