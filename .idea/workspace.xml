@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="775e984b-6d4a-4fad-9503-0a2430c283b8" name="Changes" comment="added configuration for production to ng build on server" />
+    <list default="true" id="775e984b-6d4a-4fad-9503-0a2430c283b8" name="Changes" comment="added pull command">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,8 +85,14 @@
       <recent name="C:\portfolio\Portfolio\src\app\tutorial" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.server.mjs">
     <configuration name="localhost:4200" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:4200/">
+      <method v="2" />
+    </configuration>
+    <configuration name="main.server.mjs" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Portfolio/dist/Portfolio/server/main.server.mjs" working-dir="$PROJECT_DIR$/Portfolio/dist/Portfolio/server">
+      <method v="2" />
+    </configuration>
+    <configuration name="server.mjs" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Portfolio/dist/Portfolio/server/server.mjs" working-dir="$PROJECT_DIR$/Portfolio/dist/Portfolio/server">
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
@@ -93,6 +101,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.server.mjs" />
+        <item itemvalue="Node.js.main.server.mjs" />
         <item itemvalue="JavaScript Debug.localhost:4200" />
       </list>
     </recent_temporary>
@@ -122,14 +132,6 @@
       <workItem from="1772739543747" duration="8335000" />
       <workItem from="1773066194052" duration="18289000" />
       <workItem from="1773941867214" duration="1016000" />
-    </task>
-    <task id="LOCAL-00003" summary="Added dynamic particle background with blue and gray color scheme.">
-      <option name="closed" value="true" />
-      <created>1772140926695</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1772140926695</updated>
     </task>
     <task id="LOCAL-00004" summary="added sections hero-banner, about me, projects, experience, contacts and footer. will need to review contents and adjust.">
       <option name="closed" value="true" />
@@ -515,7 +517,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774652052952</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="added pull command">
+      <option name="closed" value="true" />
+      <created>1774652460465</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1774652460465</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,7 +543,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="checking if anything is in dist" />
     <MESSAGE value="more checking of path in the runner" />
     <MESSAGE value="set option to remove target files to true" />
     <MESSAGE value="another test to see if the files are found" />
@@ -558,6 +567,7 @@
     <MESSAGE value="switched to building on the server again. building on github was a good idea but stupid in hindsight" />
     <MESSAGE value="added npm install to the server" />
     <MESSAGE value="added configuration for production to ng build on server" />
-    <option name="LAST_COMMIT_MESSAGE" value="added configuration for production to ng build on server" />
+    <MESSAGE value="added pull command" />
+    <option name="LAST_COMMIT_MESSAGE" value="added pull command" />
   </component>
 </project>
