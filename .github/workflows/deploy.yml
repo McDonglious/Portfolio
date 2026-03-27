@@ -35,8 +35,9 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 2222
-          source: "dist/Portfolio/* db.json"
+          source: "./Portfolio/dist/Portfolio/* ./Portfolio/db.json"
           target: /var/www/Portfolio/Portfolio
+          strip_components: 1
           rm: true
 
       - name: Restart Docker
