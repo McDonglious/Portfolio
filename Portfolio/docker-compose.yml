@@ -16,7 +16,7 @@ services:
     working_dir: /app
     volumes:
       - /var/www/Portfolio/Portfolio/dist/Portfolio:/app/dist/Portfolio
-    command: node dist/Portfolio/server/main.server.mjs
+    command: node dist/Portfolio/server/server.mjs
     ports:
       - "4000:4000"
     environment:
