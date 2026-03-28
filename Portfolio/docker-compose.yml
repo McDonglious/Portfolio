@@ -1,18 +1,19 @@
 version: '3.8'
 
 services:
-  json-server:
-    image: node:20-alpine
-    working_dir: /app
-    volumes:
-      - /var/www/Portfolio/Portfolio:/app
-    command: npx json-server --watch /app/db.json --port 3000 --host 0.0.0.0 --cors
-    ports:
-      - "127.0.0.1:3000:3000"
-    restart: unless-stopped
+#  json-server:
+#    image: node:20-alpine
+#    working_dir: /app
+#    volumes:
+#      - /var/www/Portfolio/Portfolio:/app
+#    command: npx json-server --watch /app/db.json --port 3000 --host 0.0.0.0 --cors
+#    ports:
+#      - "127.0.0.1:3000:3000"
+#    restart: unless-stopped
 
   node:
     image: node:20-alpine
+    user: "1000:1000"
     working_dir: /app
     volumes:
       - /var/www/Portfolio/Portfolio/dist/Portfolio:/app/dist/Portfolio
