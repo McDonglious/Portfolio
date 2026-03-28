@@ -21,7 +21,7 @@ services:
       - "4000:4000"  # Node.js listens on 4000
     environment:
       - NODE_ENV=production
-      - PORT=443
+      - PORT=4000
     restart: unless-stopped
 
 #  nginx:
