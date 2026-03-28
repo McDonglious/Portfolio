@@ -8,7 +8,7 @@ services:
       - /var/www/Portfolio/Portfolio:/app
     command: npx json-server --watch /app/db.json --port 3000 --host 0.0.0.0 --cors
     ports:
-      - "3000:3000"
+      - "127.0.0.1:3000:3000"
     restart: unless-stopped
 
   node:
@@ -18,7 +18,7 @@ services:
       - /var/www/Portfolio/Portfolio/dist/Portfolio:/app/dist/Portfolio
     command: node dist/Portfolio/server/server.mjs
     ports:
-      - "4000:4000"  # Node.js listens on 4000
+      - "127.0.0.1:4000:4000"
     environment:
       - NODE_ENV=production
       - PORT=4000
