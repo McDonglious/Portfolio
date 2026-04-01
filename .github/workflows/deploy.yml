@@ -31,10 +31,3 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 2222
-          script: |
-            cd /var/www/Portfolio/Portfolio
-            docker-compose down
-            git pull origin main
-            npm install
-            ng build --configuration=production 
-            docker-compose up -d
