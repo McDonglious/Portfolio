@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="775e984b-6d4a-4fad-9503-0a2430c283b8" name="Changes" comment="trying to fix ports so it will come online.">
+    <list default="true" id="775e984b-6d4a-4fad-9503-0a2430c283b8" name="Changes" comment="removed deployment script deployment script now on server side.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/public/assets/data/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/project-details/project-details.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/project-details/project-details.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/project-service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/service/project-service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/project-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/service/project-service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +87,9 @@
       <recent name="C:\portfolio\portfolio\public\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sande\WebstormProjects\Portfolio\Portfolio\public" />
+      <recent name="C:\Users\sande\WebstormProjects\Portfolio\Portfolio\src\app\service" />
+      <recent name="C:\Users\sande\WebstormProjects\Portfolio\Portfolio\src\assets\data" />
       <recent name="C:\portfolio\Portfolio\public\project_pictures" />
       <recent name="C:\portfolio\Portfolio\src\app\tutorial" />
     </key>
@@ -137,14 +143,6 @@
       <workItem from="1772739543747" duration="8335000" />
       <workItem from="1773066194052" duration="18289000" />
       <workItem from="1773941867214" duration="1016000" />
-    </task>
-    <task id="LOCAL-00006" summary="replaced place holders in projects and experience with true content.">
-      <option name="closed" value="true" />
-      <created>1772789607206</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1772789607206</updated>
     </task>
     <task id="LOCAL-00007" summary="Added detail page for each project.">
       <option name="closed" value="true" />
@@ -530,7 +528,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774654795870</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="removed deployment script deployment script now on server side.">
+      <option name="closed" value="true" />
+      <created>1775079534193</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1775079534193</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -548,7 +554,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="another test to see if the files are found" />
     <MESSAGE value="still trying to fix the issues with the paths while transfering files" />
     <MESSAGE value="fixed typo in new source string" />
     <MESSAGE value="split file transfer into two steps" />
@@ -573,6 +578,7 @@
     <MESSAGE value="added pull command" />
     <MESSAGE value="running wrong server.mjs changed it to the correct one" />
     <MESSAGE value="trying to fix ports so it will come online." />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to fix ports so it will come online." />
+    <MESSAGE value="removed deployment script deployment script now on server side." />
+    <option name="LAST_COMMIT_MESSAGE" value="removed deployment script deployment script now on server side." />
   </component>
 </project>

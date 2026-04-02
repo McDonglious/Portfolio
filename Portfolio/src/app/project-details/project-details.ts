@@ -1,6 +1,6 @@
 import { Component, inject, ChangeDetectorRef } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import {ProjectService} from '../project-service';
+import {ProjectService} from '../service/project-service';
 import {Topbar} from '../topbar/topbar';
 import {Footer} from '../footer/footer';
 import { CarouselModule } from 'primeng/carousel';
