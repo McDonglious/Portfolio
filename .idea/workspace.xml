@@ -4,24 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="775e984b-6d4a-4fad-9503-0a2430c283b8" name="Changes" comment="commented out forms for contact needs a proper backend for it to work.">
+    <list default="true" id="775e984b-6d4a-4fad-9503-0a2430c283b8" name="Changes" comment="reordered stylings abit and made functional navlinks for the topbar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/about/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/about/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/about/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/about/about.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/contact/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/contact/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/contact/contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/contact/contact.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/experience/experience.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/experience/experience.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/experience/experience.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/experience/experience.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/hero/hero.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/hero/hero.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/hero/hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/hero/hero.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/hero/hero.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/hero/hero.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/project-details/project-details.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/project-details/project-details.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/projects/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/projects/projects.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/projects/projects.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/projects/projects.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/topbar/topbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/topbar/topbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/topbar/topbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/topbar/topbar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/topbar/topbar.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/topbar/topbar.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/contact/contact.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/contact/contact.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,14 +140,6 @@
       <workItem from="1772739543747" duration="8335000" />
       <workItem from="1773066194052" duration="18289000" />
       <workItem from="1773941867214" duration="1016000" />
-    </task>
-    <task id="LOCAL-00011" summary="added security to the build options and allowed hosts for development.">
-      <option name="closed" value="true" />
-      <created>1774459738021</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1774459738021</updated>
     </task>
     <task id="LOCAL-00012" summary="change where the project is build and run while deploying.">
       <option name="closed" value="true" />
@@ -548,7 +525,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775155670111</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="reordered stylings abit and made functional navlinks for the topbar">
+      <option name="closed" value="true" />
+      <created>1775228779397</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1775228779398</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -566,7 +551,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="removed healthcheck for now" />
     <MESSAGE value="added nginx to be deployed" />
     <MESSAGE value="fixing more paths" />
     <MESSAGE value="weird stuff happening with the path of some files" />
@@ -591,6 +575,7 @@
     <MESSAGE value="using the primitive service to pass info for the project cards in home." />
     <MESSAGE value="modified the project html to use the db property names" />
     <MESSAGE value="commented out forms for contact needs a proper backend for it to work." />
-    <option name="LAST_COMMIT_MESSAGE" value="commented out forms for contact needs a proper backend for it to work." />
+    <MESSAGE value="reordered stylings abit and made functional navlinks for the topbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="reordered stylings abit and made functional navlinks for the topbar" />
   </component>
 </project>

@@ -9,8 +9,8 @@ import { Component } from '@angular/core';
 })
 export class Contact {
   links = [
-    { name: "Email", url: "mailto:your-email@example.com", icon: "✉️" },
-    { name: "LinkedIn", url: "https://linkedin.com/in/your-profile", icon: "💼" },
-    { name: "GitHub", url: "https://github.com/your-username", icon: "🐙" }
+    { name: "Email", url: "mailto:sanderdemiddelaer@hotmail.com", icon: "✉️" },
+    { name: "LinkedIn", url: "https://linkedin.com/in/sander-de-middelaer-424437357", icon: "💼" },
+    { name: "GitHub", url: "https://github.com/McDonglious", icon: "🐙" }
   ];
 }
