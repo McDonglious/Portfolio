@@ -61,8 +61,20 @@ button.primary:hover {
 
 body {
   padding-top: 4rem;
+  margin: 0; /* Reset default margin */
+  min-height: 100vh; /* Ensure body takes full viewport height */
 }
 
+@media (max-width: 768px) {
+  body {
+    padding-top: 3rem; /* Slightly less padding for mobile */
+  }
+
+  .home-section {
+    padding: 1.5rem; /* Reduce padding on home sections for mobile */
+    margin: 3rem auto; /* Adjust margin for mobile */
+  }
+}
 .home-section {
   background: linear-gradient(rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.8));
   color: var(--accent-color); /* #f5f6fa */
