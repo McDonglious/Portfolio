@@ -1,7 +1,6 @@
 .topbar {
   background-color: var(--background-color);
   color: var(--accent-color);
-  padding: 1rem 1.5rem; /* Reduced padding for mobile */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -12,6 +11,8 @@
   right: 0;
   z-index: 1000;
   gap: 1rem; /* Adds spacing between elements */
+  min-height: 4rem; /* Minimum height to ensure it's not too small */
+  padding: 0.75rem 1.5rem; /* Tight padding */
 }
 
 .topbar-title {
