@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 })
 export class Hero {
   scrollToProjects() {
-    const projectsSection = document.querySelector('.projects');
+    const projectsSection = document.querySelector('#projects');
     projectsSection?.scrollIntoView({ behavior: 'smooth' });
   }
 }

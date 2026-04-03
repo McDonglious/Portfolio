@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="775e984b-6d4a-4fad-9503-0a2430c283b8" name="Changes" comment="using the primitive service to pass info for the project cards in home." />
+    <list default="true" id="775e984b-6d4a-4fad-9503-0a2430c283b8" name="Changes" comment="commented out forms for contact needs a proper backend for it to work.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/about/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/about/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/about/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/about/about.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/contact/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/contact/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/contact/contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/contact/contact.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/experience/experience.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/experience/experience.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/experience/experience.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/experience/experience.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/hero/hero.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/hero/hero.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/hero/hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/hero/hero.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/hero/hero.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/hero/hero.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/project-details/project-details.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/project-details/project-details.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/projects/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/projects/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/projects/projects.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/projects/projects.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/topbar/topbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/topbar/topbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/topbar/topbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/topbar/topbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/app/topbar/topbar.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/app/topbar/topbar.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/styles.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -137,22 +155,6 @@
       <workItem from="1772739543747" duration="8335000" />
       <workItem from="1773066194052" duration="18289000" />
       <workItem from="1773941867214" duration="1016000" />
-    </task>
-    <task id="LOCAL-00009" summary="adding ng serve command to deploy.yml">
-      <option name="closed" value="true" />
-      <created>1774457304012</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1774457304012</updated>
-    </task>
-    <task id="LOCAL-00010" summary="made entire project into a volume not just dist folder">
-      <option name="closed" value="true" />
-      <created>1774457797359</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1774457797359</updated>
     </task>
     <task id="LOCAL-00011" summary="added security to the build options and allowed hosts for development.">
       <option name="closed" value="true" />
@@ -530,7 +532,23 @@
       <option name="project" value="LOCAL" />
       <updated>1775155349425</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="modified the project html to use the db property names">
+      <option name="closed" value="true" />
+      <created>1775155534816</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1775155534816</updated>
+    </task>
+    <task id="LOCAL-00059" summary="commented out forms for contact needs a proper backend for it to work.">
+      <option name="closed" value="true" />
+      <created>1775155670111</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1775155670111</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -548,8 +566,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="split file transfer into two steps" />
-    <MESSAGE value="adjusted target directory and added extra step to also send the docker-compose to the server." />
     <MESSAGE value="removed healthcheck for now" />
     <MESSAGE value="added nginx to be deployed" />
     <MESSAGE value="fixing more paths" />
@@ -573,6 +589,8 @@
     <MESSAGE value="removed deployment script deployment script now on server side." />
     <MESSAGE value="switched json-server off an using a simple service plus json file. proper bakcend to be developed in future" />
     <MESSAGE value="using the primitive service to pass info for the project cards in home." />
-    <option name="LAST_COMMIT_MESSAGE" value="using the primitive service to pass info for the project cards in home." />
+    <MESSAGE value="modified the project html to use the db property names" />
+    <MESSAGE value="commented out forms for contact needs a proper backend for it to work." />
+    <option name="LAST_COMMIT_MESSAGE" value="commented out forms for contact needs a proper backend for it to work." />
   </component>
 </project>

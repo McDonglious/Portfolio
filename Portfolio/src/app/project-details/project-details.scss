@@ -1,16 +1,11 @@
 .project-detail {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 2rem;
   color: var(--accent-color);
   background-color: rgba(34, 34, 34, 0.7);
   border-radius: 8px;
   border: 1px solid var(--primary-color);
-}
-
-.project-detail h2 {
-  color: var(--primary-color);
-  margin-top: 0;
 }
 
 .project-detail h3 {
@@ -36,14 +31,6 @@
   margin: 1rem 0;
 }
 
-.tag {
-  background-color: var(--shadow-color);
-  color: var(--secondary-color);
-  padding: 0.3rem 0.6rem;
-  border-radius: 4px;
-  margin-right: 0.5rem;
-  font-size: 0.8rem;
-}
 
 :host ::ng-deep .p-carousel {
   margin: 20px 0;

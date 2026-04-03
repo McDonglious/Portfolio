@@ -9,21 +9,13 @@
   border: 1px solid var(--shadow-color); /* #2d3436 */
 }
 
-.about-me h2 {
-  color: var(--primary-color); /* #4dabf7 */
-  margin-top: 0;
-  font-size: 1.8rem;
-  border-bottom: 1px solid var(--shadow-color);
-  padding-bottom: 0.5rem;
-}
-
-.about-me p {
+#about-me p {
   margin-bottom: 1rem;
   line-height: 1.7; /* Slightly more spacing between lines */
   text-align: justify; /* Optional: for a more polished look */
 }
 
-.about-me em {
+#about-me em {
   color: var(--secondary-color); /* #74b9ff */
   font-style: italic;
 }

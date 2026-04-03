@@ -1,3 +1,9 @@
 <header class="topbar">
-  <h1 class="topbar-title">Portfolio</h1>
+  <a (click)="onPortfolioClick()" class="topbar-title">Portfolio</a>
+  <nav class="topbar-nav">
+    <a (click)="scrollTo('about-me')" class="topbar-navlink">About</a>
+    <a (click)="scrollTo('projects')" class="topbar-navlink">Projects</a>
+    <a (click)="scrollTo('experience')" class="topbar-navlink">Experience</a>
+    <a (click)="scrollTo('contact')" class="topbar-navlink">Contact</a>
+  </nav>
 </header>

@@ -1,18 +1,57 @@
 .topbar {
   background-color: var(--background-color); /* #222222 */
   color: var(--accent-color); /* #f5f6fa */
-  padding: 2rem 2rem;
+  padding: 1rem 2rem; /* Reduced padding for a tighter look */
   display: flex;
   align-items: center;
+  justify-content: space-between; /* Pushes title and nav to opposite sides */
   border-bottom: 1px solid var(--shadow-color); /* #2d3436 */
-  position: relative;
-  z-index: 10; /* Ensures it stays above other content */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 .topbar-title {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 500;
   color: var(--primary-color); /* #4dabf7 */
-  text-shadow: 0 0 5px rgba(77, 171, 247, 0.3); /* Subtle glow to match the particle theme */
+  text-shadow: 0 0 5px rgba(77, 171, 247, 0.3);
+  text-decoration: none;
+  cursor: pointer;
+  transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+
+.topbar-nav {
+  display: flex;
+  gap: 1.5rem; /* Adds spacing between nav links */
+  align-items: center; /* Vertically centers nav items */
+}
+
+.topbar-navlink {
+  font-size: 1.2rem; /* Smaller font size for nav links */
+  font-weight: 400; /* Slightly lighter weight */
+  color: var(--primary-color); /* #4dabf7 */
+  text-decoration: none;
+  cursor: pointer;
+  transition: text-shadow 0.3s ease, color 0.3s ease;
+  white-space: nowrap; /* Prevents text wrapping */
+}
+
+.topbar-navlink:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+}
+
+/* Style for social icons */
+.topbar a[target="_blank"] {
+  font-size: 1.5rem; /* Slightly larger than nav links for visibility */
+  color: var(--accent-color);
+  transition: color 0.3s ease;
+}
+
+.topbar a[target="_blank"]:hover {
+  color: var(--primary-color);
 }

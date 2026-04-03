@@ -1,34 +1,21 @@
-.hero {
-  background: linear-gradient(rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.8));
-  color: var(--accent-color);
+#hero {
   text-align: center;
-  padding: 6rem 2rem;
-  position: relative;
-  overflow: hidden;
-  margin-top: 5rem;
 }
 
 .hero-content {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   z-index: 1;
 }
 
-.hero h1 {
-  font-size: 2.5rem;
-  color: var(--primary-color);
-  margin-bottom: 1rem;
-  text-shadow: 0 0 5px rgba(77, 171, 247, 0.3);
-}
-
-.hero p {
+#hero p {
   font-size: 1.4rem;
   line-height: 1.8;
   margin-bottom: 2rem;
   font-weight: 400;
 }
 
-.hero p strong {
+#hero p strong {
   font-weight: 1200;
 }
 
@@ -47,7 +34,7 @@
   animation: spin 10s linear infinite;
 }
 
-.hero button.primary {
+#hero button.primary {
   padding: 0.8rem 2.5rem;
   font-size: 1.1rem;
   background-color: var(--primary-color);

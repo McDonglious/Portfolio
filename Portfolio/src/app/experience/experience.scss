@@ -1,11 +1,7 @@
-.experience {
-  background-color: var(--background-color);
-  color: var(--accent-color);
-  padding: 2rem;
-  max-width: 800px;
-  margin: 2rem auto;
+#experience {
+  text-align: left;
 }
-.experience h2 {
+#experience h2 {
   color: var(--primary-color);
   font-size: 1.8rem;
   border-bottom: 1px solid var(--shadow-color);
@@ -33,7 +29,7 @@
 }
 .job-company, .job-dates {
   color: var(--secondary-color);
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .job-tasks {
   margin: 0;
