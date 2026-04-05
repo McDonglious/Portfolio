@@ -26,7 +26,8 @@ export class ProjectDetails {
     const projectId = Number(this.route.snapshot.params['id']);
     this.projectService.getProjectDetails(projectId).subscribe(data => {
       this.project = data;
-      this.cdr.markForCheck(); // Manually trigger change detection
+      this.cdr.markForCheck();
+      window.scrollTo({ top: 0 });
     });
   }
 

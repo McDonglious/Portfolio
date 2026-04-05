@@ -31,7 +31,7 @@ export class ParticlesBackground{
         value: "#222222",
       },
     },
-    fpsLimit: 120,
+    fpsLimit: 60,
     interactivity: {
       events: {
         onClick: {
@@ -50,7 +50,7 @@ export class ParticlesBackground{
           quantity: 4,
         },
         repulse: {
-          distance: 200,
+          distance: 150,
           duration: 0.4,
         },
       },
@@ -61,10 +61,10 @@ export class ParticlesBackground{
       },
       links: {
         color: "#74b9ff", // Lighter blue links
-        distance: 150,
+        distance: 100,
         enable: true,
         opacity: 0.5,
-        width: 1,
+        width: 0.5,
       },
       move: {
         direction: MoveDirection.none,
@@ -73,7 +73,7 @@ export class ParticlesBackground{
           default: OutMode.bounce,
         },
         random: false,
-        speed: 4,
+        speed: 2,
         straight: false,
       },
       number: {
@@ -81,7 +81,7 @@ export class ParticlesBackground{
           enable: true,
           area: 600,
         },
-        value: 40,
+        value: 80,
       },
       opacity: {
         value: 0.6,
@@ -90,8 +90,12 @@ export class ParticlesBackground{
         type: "circle",
       },
       size: {
-        value: { min: 1, max: 5 },
+        value: { min: 1, max: 3 },
       },
+      orbit: {
+        enable: true,
+        distance: 200
+      }
     },
     detectRetina: true,
   };

@@ -7,7 +7,6 @@ import {Footer} from '../footer/footer';
 import {Hero} from '../hero/hero';
 import {Experience} from '../experience/experience';
 import {Contact} from '../contact/contact';
-import {ParticlesBackground} from '../particles-background/particles-background';
 
 @Component({
   selector: 'app-home',
@@ -20,7 +19,6 @@ import {ParticlesBackground} from '../particles-background/particles-background'
     Hero,
     Experience,
     Contact,
-    ParticlesBackground,
   ],
   templateUrl: './home.html',
   styleUrl: './home.scss',
