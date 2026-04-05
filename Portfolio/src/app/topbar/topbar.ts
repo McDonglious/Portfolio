@@ -16,10 +16,15 @@ export class Topbar {
   }
 
   scrollTo(id: string): void {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    this.router.navigate(['/']).then(() => {
+      // Wait for the navigation to complete
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 0);
+    });
   }
 
   onPortfolioClick(): void {
