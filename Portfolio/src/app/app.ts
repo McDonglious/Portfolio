@@ -1,7 +1,7 @@
 import { Component, signal } from '@angular/core';
-import {NavigationEnd, Router, RouterOutlet} from '@angular/router';
+import { RouterOutlet} from '@angular/router';
 import {ParticlesBackground} from './particles-background/particles-background';
-import {filter} from 'rxjs';
+
 
 @Component({
   selector: 'app-root',
