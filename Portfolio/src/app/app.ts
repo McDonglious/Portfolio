@@ -9,9 +9,7 @@ import {ParticlesBackground} from './particles-background/particles-background';
   template: `
     <app-particles-background/>
     <main>
-      <section class="content">
-        <router-outlet/>
-      </section>
+      <router-outlet/>
     </main>
   `,
   standalone: true,

@@ -1,287 +1,443 @@
 {
   "projects": [
     {
-      "id": 6,
-      "projectTitle": "Point Cloud Annotation in VR",
-      "images": [
-        { "url": "/project_pictures/Screenshot%202026-03-09%20165603.png", "alt": "Image 1" },
-        { "url": "/project_pictures/Screenshot%202026-03-09%20165903.png", "alt": "Image 2" },
-        { "url": "/project_pictures/Screenshot%202026-03-09%20170004.png", "alt": "Image 3" }
-      ],
-      "projectOverview": "A VR-based system for annotating 3D point clouds, designed to streamline the creation of training data for AI and autonomous vehicles. Users interact with point clouds in a fully immersive 3D space, making the annotation process faster, more intuitive, and more precise.",
-      "projectBackground": "The client needed a more efficient and accurate way to annotate point clouds, which are critical for training AI models in autonomous vehicles. Traditional 2D annotation methods were time-consuming and less intuitive for 3D data. Our solution was to create a VR environment where users could interact with point clouds in a fully immersive 3D space.",
+      "id": 3,
+      "projectTitle": "SDM Framework: Custom MVC Framework",
+      "projectOverview": "A custom MVC framework built solo in C# and .NET Core, featuring a Razor-like templating language with support for loops, conditionals, and dynamic HTML generation. The template parser was built using ANTLR4 to define and process the grammar.",
+      "projectBackground": "Built as a solo school project with the goal of understanding how frameworks like ASP.NET MVC actually work under the hood — routing, template rendering, dependency injection and all. Rather than just using a framework, the assignment was to build one.",
       "projectFeatures": [
-        { "title": "VR Interaction", "description": "Navigate and interact with point clouds in a fully immersive VR environment." },
-        { "title": "Annotation Tools", "description": "Tools for selecting, labeling, and categorizing points or objects." },
-        { "title": "User-Friendly Interface", "description": "Intuitive controls for navigating and manipulating point clouds." },
-        { "title": "Data Export", "description": "Export annotated data in formats compatible with AI training pipelines." }
+        {
+          "title": "Custom Templating Language",
+          "description": "A Razor-like syntax supporting loops, conditionals, and dynamic expressions, parsed using an ANTLR4 grammar."
+        },
+        {
+          "title": "MVC Architecture",
+          "description": "Full Model-View-Controller pattern with routing, controllers, and view rendering."
+        },
+        {
+          "title": "Routing System",
+          "description": "RESTful routing that maps incoming URLs to the correct controller and action."
+        },
+        {
+          "title": "Dependency Injection",
+          "description": "Basic DI container for managing service dependencies across the framework."
+        }
       ],
-      "projectTechnologies": ["VR Development", "Unity", "C#", "3D Rendering", "Point Cloud Processing"],
+      "projectTechnologies": [
+        "C#",
+        ".NET Core",
+        "ANTLR4",
+        "MVC"
+      ],
       "projectDevelopmentProcess": [
-        "Collaborated with the client to understand their annotation needs and workflows.",
-        "Designed the VR interface and interaction model, creating prototypes for testing.",
-        "Developed the VR environment and annotation tools using Unity and C#.",
-        "Conducted user testing to gather feedback and refine the user experience."
+        "Designed the overall framework architecture before writing any code.",
+        "Defined a formal grammar for the templating language using ANTLR4, supporting loops, conditionals, and variable interpolation.",
+        "Built the parser and HTML renderer on top of that grammar.",
+        "Implemented routing, controllers, views, and a basic dependency injection system."
       ],
       "projectChallenges": [
         {
-          "challenge": "Handling Large Point Clouds",
-          "challengeDescription": "Rendering and interacting with large point clouds in VR without performance issues.",
-          "solutionDescription": "Implemented level-of-detail (LOD) techniques and optimized rendering algorithms."
+          "challenge": "Designing the Templating Grammar",
+          "challengeDescription": "Creating a grammar flexible enough to support real control flow (loops and conditionals) while remaining parseable by ANTLR4.",
+          "solutionDescription": "Iteratively designed the ANTLR4 grammar, testing edge cases in the templating syntax and adjusting the grammar rules until the parser handled all expected inputs correctly."
         },
         {
-          "challenge": "Precision in VR",
-          "challengeDescription": "Ensuring precise selection and annotation of points in a 3D environment.",
-          "solutionDescription": "Developed custom interaction techniques and tools tailored for point cloud annotation."
+          "challenge": "Routing System",
+          "challengeDescription": "Mapping incoming HTTP requests to the correct controller and action in a flexible, RESTful way.",
+          "solutionDescription": "Built a route parser and dispatcher that matched URL patterns to registered routes and invoked the appropriate controller methods."
         }
       ],
       "projectOutcomes": [
-        { "title": "Efficiency", "description": "Reduced annotation time significantly compared to traditional 2D methods." },
-        { "title": "Accuracy", "description": "Improved annotation accuracy with intuitive 3D interaction." },
-        { "title": "User Experience", "description": "Positive feedback on ease of use and effectiveness of VR tools." }
+        {
+          "title": "Working Framework",
+          "description": "A functional MVC framework capable of handling routing, rendering dynamic templates, and managing dependencies."
+        },
+        {
+          "title": "Deep Understanding",
+          "description": "Building this from scratch gave a much clearer picture of how production frameworks solve these problems."
+        }
       ],
       "projectLessons": [
-        "Gained experience in developing immersive VR applications and optimizing performance for complex 3D data.",
-        "Learned the importance of user testing and iteration in creating effective VR interfaces.",
-        "Collaborated closely with the client to deliver a solution integrated with their workflows."
+        "Designing a formal grammar is harder than it looks — small ambiguities in the grammar rules cause real parsing problems.",
+        "Building a framework from scratch is one of the best ways to understand why existing frameworks make the design choices they do.",
+        "Solo projects require more upfront architecture planning than team projects where problems can be caught earlier."
+      ],
+      "images": [
+        {
+          "id": 1,
+          "url": "/project_pictures/SDMFrameWork1.png",
+          "alt": "SDM framework test page 1"
+        },
+        {
+          "id": 2,
+          "url": "/project_pictures/SDMFrameWork2.png",
+          "alt": "SDM framework test page 2"
+        },
+        {
+          "id": 3,
+          "url": "/project_pictures/SDMFrameWork3.png",
+          "alt": "SDM framework test page 3"
+        },
+        {
+          "id": 4,
+          "url": "/project_pictures/SDMFrameWork4.png",
+          "alt": "SDM framework test page 4"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "projectTitle": "Point Cloud Annotation in VR",
+      "projectOverview": "A VR application for annotating LiDAR point clouds, built in Unity with C#. Designed for a real client as part of a school project. Users annotate 3D street scan data in an immersive environment, with height-based color mapping and automatic bounding box generation.",
+      "projectBackground": "The client needed a faster and more accurate way to annotate LiDAR point cloud data captured from vehicles driving through streets — data used to train autonomous vehicle AI models. Traditional 2D annotation tools were slow and unintuitive for inherently 3D data. Our team of three built a VR environment where annotators could work directly in 3D space.",
+      "projectFeatures": [
+        {
+          "title": "Automatic Bounding Boxes",
+          "description": "Users brush over a group of points and the system automatically calculates and draws a correctly fitted bounding box around them, rather than requiring manual box construction."
+        },
+        {
+          "title": "Height-Based Color Mapping",
+          "description": "Points are colored by their height off the ground, making it easier to visually distinguish roads, vehicles, and other objects in the scan."
+        },
+        {
+          "title": "Annotation Tools",
+          "description": "Tools for selecting, labeling, and categorizing points and objects within the VR environment."
+        },
+        {
+          "title": "Data Export",
+          "description": "Annotated data can be exported in formats compatible with AI training pipelines."
+        }
+      ],
+      "projectTechnologies": [
+        "Unity",
+        "C#",
+        "VR Development",
+        "Point Cloud Processing",
+        "3D Rendering"
+      ],
+      "projectDevelopmentProcess": [
+        "Worked directly with the client to understand their annotation workflow and data format.",
+        "Loaded and rendered LiDAR point cloud data inside a Unity VR environment.",
+        "Implemented height-based color mapping to make the 3D structure of the data easier to read.",
+        "Built the brush selection system and automatic bounding box generation.",
+        "Resolved a coordinate system mismatch between the LiDAR data format and Unity's axis conventions."
+      ],
+      "projectChallenges": [
+        {
+          "challenge": "Automatic Bounding Box Generation",
+          "challengeDescription": "Users needed to be able to select a group of points by brushing over them and have the system draw a correctly fitted bounding box automatically, rather than constructing it manually.",
+          "solutionDescription": "Built an algorithm that takes the selected point set and computes the minimum bounding box in 3D space, accounting for the orientation of the point cluster."
+        },
+        {
+          "challenge": "Coordinate System Mismatch",
+          "challengeDescription": "The LiDAR point cloud data used a different axis convention than Unity — the Y axis in the point cloud data mapped to the X axis in Unity's coordinate system. This caused the entire scene to load incorrectly until the discrepancy was identified.",
+          "solutionDescription": "Wrote a transformation layer that remaps the incoming point cloud coordinates to Unity's coordinate system before rendering, so the rest of the application could work with correct spatial data."
+        }
+      ],
+      "projectOutcomes": [
+        {
+          "title": "Delivered to Client",
+          "description": "The application was delivered to the client as a working prototype for VR-based point cloud annotation."
+        },
+        {
+          "title": "Faster Annotation",
+          "description": "The automatic bounding box system significantly reduced the manual effort required per annotation compared to traditional tools."
+        }
+      ],
+      "projectLessons": [
+        "Coordinate system conventions differ between tools and formats — always verify axis mapping when integrating external data sources.",
+        "Working with a real client changes the dynamic considerably; requirements are less defined up front and change as they see the product evolve.",
+        "Automatic geometry fitting (bounding boxes) is a more interesting problem than it first appears when the point clusters aren't axis-aligned."
+      ],
+      "images": [
+        {
+          "url": "/project_pictures/Screenshot%202026-03-09%20165603.png",
+          "alt": "Image 1"
+        },
+        {
+          "url": "/project_pictures/Screenshot%202026-03-09%20165903.png",
+          "alt": "Image 2"
+        },
+        {
+          "url": "/project_pictures/Screenshot%202026-03-09%20170004.png",
+          "alt": "Image 3"
+        }
       ]
     },
     {
       "id": 1,
       "projectTitle": "Poker Game: Online Multiplayer Poker",
-      "images": [
-        { "url": "/project_pictures/poker%20game%20lobby.png", "alt": "Screen shot of the lobby of the poker game" },
-        { "url": "/project_pictures/poker%20game%20server%20list.png", "alt": "Screenshot of the poker table list" },
-        { "url": "/project_pictures/poker%20game%20game%20screen.png", "alt": "Screenshot of the actual poker game" },
-        { "url": "/project_pictures/poker%20game%20winning%20screen.png", "alt": "Screenshot of the winning/losing screen" },
-        { "url": "/project_pictures/poker%20game%20profile%20page.png", "alt": "Screenshot of the player's profile page" },
-        { "url": "/project_pictures/pokergame%20store.png", "alt": "Screenshot of the store page" }
-      ],
-      "projectOverview": "An online poker platform with .NET 9 backend and React + Vite frontend. Players create accounts, customize profiles, and join tables with configurable buy-ins and blinds. Complex logic handles winner determination and pot distribution.",
-      "projectBackground": "The goal was to create a modern, user-friendly online poker platform with real-time gameplay and robust backend logic. Players can create accounts, customize their profiles, and join tables with friends or other players.",
+      "projectOverview": "A fully functional online poker platform with a .NET 9 backend and React + Vite frontend. Supports real-time multiplayer gameplay via SignalR, user accounts, configurable tables, and complex pot distribution logic including side pots.",
+      "projectBackground": "A school team project (team of 4-5) where I was primarily responsible for the backend. The goal was a working online poker platform with real-time gameplay, user accounts, and correct poker rules including the parts most implementations get wrong — side pots.",
       "projectFeatures": [
-        { "title": "User Accounts", "description": "Players create accounts, customize profiles, and manage their funds." },
-        { "title": "Table Creation", "description": "Users can create tables with configurable buy-ins and blind settings." },
-        { "title": "Real-Time Gameplay", "description": "Real-time updates for all players during the game." },
-        { "title": "Winner Logic", "description": "Complex logic to determine winners and distribute pots." }
+        {
+          "title": "Real-Time Gameplay via SignalR",
+          "description": "All game state updates are pushed to connected clients in real time using SignalR, keeping every player's view in sync."
+        },
+        {
+          "title": "Side Pot Logic",
+          "description": "Handles the full complexity of poker pot distribution including side pots when players are all-in with different stack sizes."
+        },
+        {
+          "title": "User Accounts & Profiles",
+          "description": "Players can create accounts, customize profiles, and manage their funds."
+        },
+        {
+          "title": "Configurable Tables",
+          "description": "Table creation with configurable buy-ins and blind settings."
+        }
       ],
-      "projectTechnologies": [".NET 9", "React", "Vite", "PostgreSQL", "Identity Server", "Google Cloud"],
+      "projectTechnologies": [
+        ".NET 9",
+        "SignalR",
+        "React",
+        "Vite",
+        "PostgreSQL",
+        "Identity Server",
+        "Google Cloud"
+      ],
       "projectDevelopmentProcess": [
-        "Designed the backend architecture using .NET 9 and PostgreSQL for data storage.",
-        "Developed the frontend using React and Vite for a fast and responsive user experience.",
-        "Implemented real-time gameplay logic and winner determination algorithms.",
-        "Deployed the application on Google Cloud, using buckets for media storage."
+        "Designed the backend architecture in .NET 9 with PostgreSQL for persistence and Identity Server for authentication.",
+        "Implemented real-time game state synchronization using SignalR.",
+        "Built the poker game logic including hand evaluation, betting rounds, and pot distribution.",
+        "Implemented side pot calculation for all-in scenarios.",
+        "Deployed on Google Cloud with media storage via buckets."
       ],
       "projectChallenges": [
         {
-          "challenge": "Real-Time Updates",
-          "challengeDescription": "Ensuring all players receive real-time updates during gameplay without latency.",
-          "solutionDescription": "Implemented efficient state management and real-time communication protocols."
+          "challenge": "Side Pot Distribution",
+          "challengeDescription": "Correctly distributing pots when multiple players are all-in with different stack sizes requires tracking multiple separate pots and determining the correct winner for each — one of the more complex rules in poker.",
+          "solutionDescription": "Built a dedicated pot management system that tracks each side pot separately and evaluates the correct eligible winners per pot. The logic handles most cases correctly; a small number of edge cases in split pot scenarios were identified but not fully resolved within the project timeline — the fix was known but ran out of time to implement."
         },
         {
-          "challenge": "Complex Winner Logic",
-          "challengeDescription": "Developing accurate and efficient logic to determine winners and distribute pots.",
-          "solutionDescription": "Created modular algorithms to handle different poker scenarios and edge cases."
+          "challenge": "Real-Time State Sync",
+          "challengeDescription": "Keeping all connected players' game views consistent in real time without race conditions or state drift.",
+          "solutionDescription": "Used SignalR to push authoritative game state from the server to all clients after each action, keeping the server as the single source of truth."
         }
       ],
       "projectOutcomes": [
-        { "title": "User Engagement", "description": "Players enjoyed the intuitive interface and real-time gameplay." },
-        { "title": "Performance", "description": "Optimized backend logic ensured smooth and responsive gameplay." },
-        { "title": "Scalability", "description": "The system was designed to handle multiple tables and users simultaneously." }
+        {
+          "title": "Fully Playable",
+          "description": "The game is playable end-to-end with real-time multiplayer, user accounts, and correct poker rules for the vast majority of scenarios."
+        },
+        {
+          "title": "Complex Backend Logic",
+          "description": "The pot distribution system handles the real complexity of poker, not just the happy path."
+        }
       ],
       "projectLessons": [
-        "Gained experience in developing real-time multiplayer applications.",
-        "Learned the importance of modular design for complex game logic.",
-        "Improved skills in deploying and managing cloud-based applications."
+        "SignalR makes real-time server-to-client communication straightforward, but keeping server state authoritative and preventing race conditions still requires careful design.",
+        "Poker pot distribution is deceptively complex — side pots alone require a solid understanding of the rules before writing any code.",
+        "Knowing exactly how to fix a bug but not having time to implement it is a common reality; documenting the known issue and solution is better than pretending it doesn't exist."
+      ],
+      "images": [
+        {
+          "url": "/project_pictures/poker%20game%20lobby.png",
+          "alt": "Screenshot of the lobby"
+        },
+        {
+          "url": "/project_pictures/poker%20game%20server%20list.png",
+          "alt": "Screenshot of the table list"
+        },
+        {
+          "url": "/project_pictures/poker%20game%20game%20screen.png",
+          "alt": "Screenshot of the game"
+        },
+        {
+          "url": "/project_pictures/poker%20game%20winning%20screen.png",
+          "alt": "Screenshot of the winning screen"
+        },
+        {
+          "url": "/project_pictures/poker%20game%20profile%20page.png",
+          "alt": "Screenshot of the profile page"
+        },
+        {
+          "url": "/project_pictures/pokergame%20store.png",
+          "alt": "Screenshot of the store"
+        }
       ]
     },
     {
       "id": 5,
       "projectTitle": "Phygital: Digital Polling System",
-      "projectOverview": "A digital polling system built with .NET 8 and Razor Pages, designed to create interactive flows for polls with subjects, sub-subjects, and dynamic question types (open-ended, yes/no, multiple-choice). Admins can build and manage poll flows, while poll takers guide participants through the process.",
-      "projectBackground": "The goal was to modernize traditional polling methods by creating a digital system that supports dynamic question flows, role-based access, and media integration. The system was designed for use in educational and corporate environments.",
+      "projectOverview": "A digital polling platform built with .NET 8 and Razor Pages, supporting dynamic poll flows with multiple question types, role-based access control, and media integration via Google Cloud Storage.",
+      "projectBackground": "A school project built for an educational client. I was primarily responsible for the backend. The system needed to replace traditional polling methods with something that could handle structured, branching question flows and different user roles with different levels of access.",
       "projectFeatures": [
-        { "title": "Dynamic Poll Flows", "description": "Admins can create and manage poll flows with subjects and sub-subjects." },
-        { "title": "Role-Based Access", "description": "Different roles for admins, poll takers, and participants with distinct permissions." },
-        { "title": "Media Integration", "description": "Support for images and videos stored in Google Cloud Buckets." },
-        { "title": "Question Types", "description": "Supports open-ended, yes/no, and multiple-choice questions." }
+        {
+          "title": "Dynamic Poll Flows",
+          "description": "Admins build polls with subjects, sub-subjects, and branching question flows rather than simple linear question lists."
+        },
+        {
+          "title": "Role-Based Access Control",
+          "description": "Separate roles for admins, poll facilitators, and participants, each with distinct permissions implemented via Identity Server."
+        },
+        {
+          "title": "Multiple Question Types",
+          "description": "Supports open-ended, yes/no, and multiple-choice questions within the same poll flow."
+        },
+        {
+          "title": "Media Integration",
+          "description": "Questions and answers can include images and video stored in Google Cloud Storage buckets."
+        }
       ],
-      "projectTechnologies": [".NET 8", "Razor Pages", "PostgreSQL", "Identity Server", "Google Cloud", "Cloud Storage"],
+      "projectTechnologies": [
+        ".NET 8",
+        "Razor Pages",
+        "PostgreSQL",
+        "Identity Server",
+        "Google Cloud",
+        "Cloud Storage"
+      ],
       "projectDevelopmentProcess": [
-        "Designed the system architecture with .NET 8, Razor Pages, and PostgreSQL.",
+        "Designed the backend architecture and data model for representing flexible poll flows.",
         "Implemented role-based access control using Identity Server.",
-        "Developed the poll flow logic and question types.",
-        "Deployed the application on Google Cloud with media storage via Buckets."
+        "Built the poll flow logic to support branching and multiple question types.",
+        "Integrated Google Cloud Storage for media uploads and retrieval.",
+        "Deployed on Google Cloud."
       ],
       "projectChallenges": [
         {
-          "challenge": "Complex Poll Logic",
-          "challengeDescription": "Creating a flexible system to handle dynamic poll flows and question types.",
-          "solutionDescription": "Designed a modular architecture to support various question types and flow configurations."
+          "challenge": "Flexible Poll Flow Data Model",
+          "challengeDescription": "Representing poll flows that can branch, contain sub-subjects, and support multiple question types in a relational database without the schema becoming unmanageable.",
+          "solutionDescription": "Designed a modular data model that separates the flow structure from the question content, allowing different question types to be added without restructuring the core schema."
         },
         {
           "challenge": "Media Handling",
-          "challengeDescription": "Storing and retrieving media files efficiently using Google Cloud Buckets.",
-          "solutionDescription": "Implemented a robust media handling system with optimized upload and retrieval processes."
+          "challengeDescription": "Allowing admins to attach images and video to questions while keeping the application itself stateless.",
+          "solutionDescription": "Stored all media in Google Cloud Storage buckets and referenced them by URL in the database, keeping the application layer clean."
         }
       ],
       "projectOutcomes": [
-        { "title": "User Adoption", "description": "Successfully adopted by educational institutions for digital polling." },
-        { "title": "Flexibility", "description": "Supports a wide range of polling scenarios with customizable flows." },
-        { "title": "Scalability", "description": "Designed to handle multiple concurrent polls and users." }
-      ],
-      "projectLessons": [
-        "Gained experience in designing and implementing role-based access control systems.",
-        "Learned best practices for media storage and retrieval using cloud services.",
-        "Improved skills in creating dynamic, user-friendly interfaces with Razor Pages."
-      ],
-      "images": [
-        { "id": 1, "url": "/project_pictures/ThemeSelector.png", "alt": "screenshot theme selector" },
-        { "id": 2, "url": "/project_pictures/SimDetail.png", "alt": "screenshot van de simulatie details" },
-        { "id": 3, "url": "/project_pictures/OverzichtNotities.png", "alt": "Overzicht van de notities van de begeleider" },
-        { "id": 3, "url": "/project_pictures/SimulatieOverzicht.png", "alt": "Overzicht van de simulatie van de Poll voor de begeleider" }
-      ]
-    },
-    {
-      "id": 4,
-      "projectTitle": "Crew Roster: Ship and Crew Management",
-      "projectOverview": "A frontend application for managing ships and crew members, built with Webpack, EJS, and JSON Server. The application demonstrates CRUD operations and dynamic data rendering, allowing users to manage ships, crew members, and their assignments.",
-      "projectBackground": "This project was developed as a proof of concept for managing ship crews and their assignments. The goal was to create a simple yet functional interface for adding, editing, and viewing ships and crew members, with a focus on usability and data organization.",
-      "projectFeatures": [
-        { "title": "Ship Management", "description": "Add, edit, and delete ships, including details like name, type, and capacity." },
-        { "title": "Crew Management", "description": "Manage crew members, including personal details, roles, and assignments to ships." },
-        { "title": "Dynamic Data Rendering", "description": "Real-time updates and rendering of ships and crew data." },
-        { "title": "Responsive Design", "description": "Optimized for use on both desktop and mobile devices." }
-      ],
-      "projectTechnologies": ["JavaScript", "EJS", "Webpack", "JSON Server", "CSS", "HTML5"],
-      "projectDevelopmentProcess": [
-        "Designed the data model for ships and crew members, including their relationships.",
-        "Implemented CRUD operations for ships and crew members using JSON Server as a mock backend.",
-        "Developed the frontend interface with EJS templates and CSS for styling.",
-        "Used Webpack to bundle and optimize the application for performance."
-      ],
-      "projectChallenges": [
         {
-          "challenge": "Data Relationships",
-          "challengeDescription": "Managing the relationships between ships and crew members in a dynamic interface.",
-          "solutionDescription": "Designed a data structure that clearly links crew members to ships and implemented logic to handle assignments."
+          "title": "Delivered to Client",
+          "description": "The system was delivered to the educational client as a working platform."
         },
         {
-          "challenge": "Real-Time Updates",
-          "challengeDescription": "Ensuring the interface updates in real-time as data changes.",
-          "solutionDescription": "Used event listeners and dynamic rendering to keep the interface in sync with the data."
+          "title": "Flexible Architecture",
+          "description": "The data model supports a wide range of poll configurations without code changes."
         }
       ],
-      "projectOutcomes": [
-        { "title": "Functional Prototype", "description": "Successfully created a working prototype for managing ship crews." },
-        { "title": "User-Friendly Interface", "description": "Intuitive and easy-to-use interface for managing complex data relationships." },
-        { "title": "Learning Experience", "description": "Gained hands-on experience with Webpack, EJS, and JSON Server." }
-      ],
       "projectLessons": [
-        "Improved understanding of frontend frameworks and templating engines like EJS.",
-        "Learned best practices for organizing and managing data in a frontend application.",
-        "Developed skills in creating responsive and dynamic user interfaces."
+        "Designing a flexible data model upfront saves a lot of pain later — rigid schemas are hard to change once data exists.",
+        "Role-based access control needs to be designed into the architecture from the start, not bolted on afterward.",
+        "Keeping media out of the application layer and in dedicated storage is the right call even for smaller projects."
       ],
       "images": [
-        { "id": 1, "url": "/project_pictures/CrewRosterHome.png", "alt": "Ship Landing page Screenshot" },
-        { "id": 2, "url": "/project_pictures/CrewRosterDetails.png", "alt": "Crew Member and ship Details details" },
-        { "id": 3, "url": "/project_pictures/CrewRosterAdvancedSearch.png", "alt": "Search for ship screen" },
-        { "id": 4, "url": "/project_pictures/CrewRosterSettings.png", "alt": "global styling settings screen" }
-      ]
-    },
-    {
-      "id": 3,
-      "projectTitle": "SDM Framework: Custom MVC Framework",
-      "projectOverview": "A custom MVC (Model-View-Controller) framework built with C# and ANTLR4, featuring a Razor-like templating language for dynamic HTML generation. Designed to provide a lightweight alternative to ASP.NET MVC for educational and small-scale projects.",
-      "projectBackground": "This project was developed to explore the inner workings of MVC frameworks and templating engines. The goal was to create a simple yet functional framework that supports routing, controllers, views, and a custom templating language similar to Razor.",
-      "projectFeatures": [
-        { "title": "MVC Architecture", "description": "Implements the Model-View-Controller pattern for separating concerns and organizing code." },
-        { "title": "Custom Templating Language", "description": "A Razor-like templating language for dynamic HTML generation, parsed using ANTLR4." },
-        { "title": "Routing System", "description": "Supports RESTful routing for mapping URLs to controllers and actions." },
-        { "title": "Dependency Injection", "description": "Basic dependency injection for managing service dependencies." }
-      ],
-      "projectTechnologies": ["C#", "ANTLR4", "MVC", ".NET Core"],
-      "projectDevelopmentProcess": [
-        "Designed the framework architecture, including the MVC pattern and routing system.",
-        "Developed a custom templating language and parser using ANTLR4 for dynamic HTML generation.",
-        "Implemented the core MVC components: models, views, controllers, and routing.",
-        "Created a dependency injection system for managing service dependencies."
-      ],
-      "projectChallenges": [
         {
-          "challenge": "Templating Language",
-          "challengeDescription": "Designing and implementing a custom templating language with syntax similar to Razor.",
-          "solutionDescription": "Used ANTLR4 to create a grammar for the templating language and developed a parser to generate HTML."
+          "id": 1,
+          "url": "/project_pictures/ThemeSelector.png",
+          "alt": "Screenshot theme selector"
         },
         {
-          "challenge": "Routing System",
-          "challengeDescription": "Creating a flexible routing system to map URLs to controllers and actions.",
-          "solutionDescription": "Implemented a route parser and dispatcher to handle HTTP requests and invoke the appropriate controllers."
+          "id": 2,
+          "url": "/project_pictures/SimDetail.png",
+          "alt": "Screenshot simulation details"
+        },
+        {
+          "id": 3,
+          "url": "/project_pictures/OverzichtNotities.png",
+          "alt": "Overview of facilitator notes"
+        },
+        {
+          "id": 4,
+          "url": "/project_pictures/SimulatieOverzicht.png",
+          "alt": "Poll simulation overview"
         }
-      ],
-      "projectOutcomes": [
-        { "title": "Functional Framework", "description": "Successfully created a working MVC framework with a custom templating language." },
-        { "title": "Educational Tool", "description": "Serves as an educational tool for understanding MVC frameworks and templating engines." },
-        { "title": "Lightweight", "description": "Provides a lightweight alternative to ASP.NET MVC for small-scale projects." }
-      ],
-      "projectLessons": [
-        "Gained a deep understanding of MVC frameworks and how they work under the hood.",
-        "Learned how to design and implement a custom templating language using ANTLR4.",
-        "Improved skills in C# and .NET Core development."
-      ],
-      "images": [
-        { "id": 1, "url": "/project_pictures/SDMFrameWork1.png", "alt": "SDM framework test page 1" },
-        { "id": 2, "url": "/project_pictures/SDMFrameWork2.png", "alt": "SDM framework test page 2" },
-        { "id": 3, "url": "/project_pictures/SDMFrameWork3.png", "alt": "SDM framework test page 3" },
-        { "id": 4, "url": "/project_pictures/SDMFrameWork4.png", "alt": "SDM framework test page 4" }
       ]
     },
     {
       "id": 2,
       "projectTitle": "Portfolio Website",
-      "projectOverview": "A personal portfolio website built with Angular, showcasing projects, skills, and experience. Features a modern design with a particle.js background, responsive layout, and a focus on accessibility and performance.",
-      "projectBackground": "This website was developed to serve as a central hub for my professional work, providing an overview of my projects, skills, and experience. The goal was to create a visually appealing and user-friendly platform to present my work to potential employers and collaborators.",
+      "projectOverview": "This portfolio, built with Angular SSR and self-hosted on a repurposed desktop running Linux. Served via a Node.js container behind an Nginx reverse proxy with Let's Encrypt TLS. Deployed automatically via a GitHub Actions pipeline on every push to main.",
+      "projectBackground": "Rather than deploying to a managed platform, the goal was to own the full stack — from the hardware to the TLS certificate. The infrastructure setup was as much a learning exercise as the Angular application itself.",
       "projectFeatures": [
-        { "title": "Project Showcase", "description": "Detailed pages for each project, including descriptions, technologies used, and carousels for screenshots." },
-        { "title": "Responsive Design", "description": "Optimized for all devices, from desktops to mobile phones." },
-        { "title": "Interactive Elements", "description": "Dynamic components like carousels, particle.js background, and smooth navigation." },
-        { "title": "Accessibility", "description": "Designed with accessibility in mind, ensuring it is usable by everyone." }
+        {
+          "title": "Self-Hosted Infrastructure",
+          "description": "Runs on a repurposed desktop machine, with Nginx on the host proxying to a Dockerized Node.js container."
+        },
+        {
+          "title": "Automated Deployment",
+          "description": "GitHub Actions pipeline builds and verifies the project, then SSHes into the server to pull, rebuild, and restart the container on every push to main."
+        },
+        {
+          "title": "TLS via Let's Encrypt",
+          "description": "HTTPS handled by Certbot with automatic certificate renewal."
+        },
+        {
+          "title": "Angular SSR",
+          "description": "Server-side rendering via Angular Universal, chosen as a learning exercise rather than a strict requirement for a portfolio site."
+        }
       ],
-      "projectTechnologies": ["Angular", "TypeScript", "tsParticles", "PrimeNG", "HTML5", "CSS3", "JSON Server"],
+      "projectTechnologies": [
+        "Angular",
+        "TypeScript",
+        "Node.js",
+        "Docker",
+        "Nginx",
+        "GitHub Actions",
+        "Let's Encrypt",
+        "Linux"
+      ],
       "projectDevelopmentProcess": [
-        "Planned the structure and content of the portfolio, focusing on clarity and user experience.",
-        "Developed the frontend using Angular and TypeScript, with a focus on modularity and reusability.",
-        "Implemented a particle.js background for visual appeal and dynamic carousels for project screenshots.",
-        "Used JSON Server to simulate a backend for project data, allowing for easy updates and maintenance."
+        "Set up Linux on a repurposed desktop and configured port forwarding and DNS for the domain sanderworks.be.",
+        "Built the Angular application with SSR.",
+        "Configured Docker Compose to run the Node.js SSR server, bound to localhost only.",
+        "Set up Nginx on the host to handle TLS termination and reverse proxy to the container.",
+        "Configured a GitHub Actions pipeline for automated build verification and deployment via SSH."
       ],
       "projectChallenges": [
         {
-          "challenge": "Dynamic Content Management",
-          "challengeDescription": "Creating a system to easily manage and update project data without modifying the codebase.",
-          "solutionDescription": "Implemented JSON Server to serve project data, allowing for easy updates via a JSON file."
+          "challenge": "CI/CD Pipeline Design",
+          "challengeDescription": "Getting a reliable automated deployment pipeline working against a self-hosted server rather than a managed platform.",
+          "solutionDescription": "Used GitHub Actions with the appleboy SSH action to connect to the server on a non-standard port, pull the latest code, rebuild, and restart Docker. Server credentials are stored as GitHub Actions secrets."
         },
         {
-          "challenge": "Performance Optimization",
-          "challengeDescription": "Ensuring fast load times and smooth interactions across all devices.",
-          "solutionDescription": "Optimized images, used lazy loading, and minimized HTTP requests to improve performance."
+          "challenge": "SSR Configuration",
+          "challengeDescription": "Configuring Angular Universal SSR to run correctly inside a Docker container behind a reverse proxy.",
+          "solutionDescription": "Ran the compiled server.mjs directly with Node.js inside the container, with Nginx proxying external traffic to the container's internal port."
         }
       ],
       "projectOutcomes": [
-        { "title": "Professional Online Presence", "description": "Established a professional and visually appealing online presence to showcase my work." },
-        { "title": "Easy Maintenance", "description": "Designed the website to be easily updatable, with project data managed via JSON." },
-        { "title": "Positive Feedback", "description": "Received positive feedback on the design, usability, and presentation of projects." }
+        {
+          "title": "Fully Operational",
+          "description": "The site is live at sanderworks.be with automated deployments on every push."
+        },
+        {
+          "title": "Full Stack Ownership",
+          "description": "Every layer from hardware to application is configured and maintained manually."
+        }
       ],
       "projectLessons": [
-        "Improved skills in Angular and TypeScript, particularly in creating reusable components and services.",
-        "Learned best practices for responsive design and accessibility in web development.",
-        "Gained experience in using JSON Server as a lightweight backend for frontend development."
+        "SSR adds real complexity to deployment — the server environment matters in ways it doesn't for a static build.",
+        "A CI/CD pipeline against self-hosted hardware has more moving parts than managed platforms, but understanding those parts is worth it.",
+        "Building and running your own infrastructure gives you a much better intuition for what managed platforms are actually doing for you."
       ],
       "images": [
-        { "id": 1, "url": "/project_pictures/PortfolioBanner.png", "alt": "Screenshot portfolio Banner" },
-        { "id": 2, "url": "/project_pictures/PortfolioAbout.png", "alt": "Screenshot portfolio about section" },
-        { "id": 3, "url": "/project_pictures/PortfolioProjects.png", "alt": "Screenshot portfolio projects" },
-        { "id": 3, "url": "/project_pictures/PortfolioDetails.png", "alt": "Screenshot portfolio projects details" },
-        { "id": 3, "url": "/project_pictures/PortfolioExperience.png", "alt": "Screenshot portfolio Experience" }
+        {
+          "id": 1,
+          "url": "/project_pictures/PortfolioBanner.png",
+          "alt": "Screenshot portfolio banner"
+        },
+        {
+          "id": 2,
+          "url": "/project_pictures/PortfolioAbout.png",
+          "alt": "Screenshot portfolio about section"
+        },
+        {
+          "id": 3,
+          "url": "/project_pictures/PortfolioProjects.png",
+          "alt": "Screenshot portfolio projects"
+        },
+        {
+          "id": 4,
+          "url": "/project_pictures/PortfolioDetails.png",
+          "alt": "Screenshot portfolio project details"
+        },
+        {
+          "id": 5,
+          "url": "/project_pictures/PortfolioExperience.png",
+          "alt": "Screenshot portfolio experience"
+        }
       ]
     }
   ]

@@ -8,11 +8,15 @@
   --text-color: #ffffff;          /* White text for readability */
 }
 
-html, body {
+html {
+  overflow-y: scroll; /* Always reserve scrollbar space for consistent layout width */
+}
+
+body {
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow-x: hidden; /* Prevents horizontal scrolling */
+  overflow-x: hidden;
 }
 
 h1 {
