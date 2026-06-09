@@ -346,6 +346,96 @@
       ]
     },
     {
+      "id": 7,
+      "projectTitle": "ASOT Mortar Module: Arma 3 AI Mortar Team",
+      "projectOverview": "An Arma 3 addon that implements realistic AI-controlled mortar team behavior, including shoot-and-scoot tactics, dynamic firing position evaluation, and simulated fire missions with ranging shots and accuracy distribution. Integrates with the ZEN mission editor framework via custom editor modules and dialogs.",
+      "projectBackground": "A personal project built out of a passion for Arma 3 and game AI. The goal was to create mortar teams that behave realistically — moving between positions, evaluating terrain, and executing fire missions with the same procedure real crews use — rather than the static, scripted behavior typical of mission editor artillery.",
+      "projectFeatures": [
+        {
+          "title": "Shoot-and-Scoot Behavior",
+          "description": "Mortar teams autonomously deploy, fire a mission, pack up, relocate to cover, and repeat — mimicking real indirect fire tactics."
+        },
+        {
+          "title": "Multi-Criteria Position Evaluation",
+          "description": "Firing positions are evaluated using raycasting for line-of-sight clearance, slope analysis, proximity to roads and tree lines, and water checks."
+        },
+        {
+          "title": "Realistic Fire Mission Simulation",
+          "description": "Each fire mission includes ranging shots with progressively tightening offsets before fire-for-effect, with accuracy modeled as a probability distribution (70% near-hit, 20% moderate error, 10% wide miss)."
+        },
+        {
+          "title": "ZEN Module Integration",
+          "description": "Mission makers place editor modules to define areas of operation and target zones. A custom spawn dialog lets them configure mortar compositions, behavior mode, and area denial settings."
+        }
+      ],
+      "projectTechnologies": [
+        "SQF",
+        "Arma 3",
+        "ZEN Modules Framework",
+        "Bohemia Interactive Scripting API"
+      ],
+      "projectDevelopmentProcess": [
+        "Designed the overall behavior architecture: spawn pipeline, position evaluation, fire mission cycle, and loop control.",
+        "Built a multi-criteria position evaluator using raycasting to find defensible firing positions within a defined area.",
+        "Implemented the fire mission cycle with ranging shots, accuracy simulation, and target memory to skip re-ranging on repeat engagements.",
+        "Integrated with BIS_fnc_unpackStaticWeapon and BIS_fnc_packStaticWeapon for realistic mortar deployment animations.",
+        "Built ZEN editor modules with custom dialogs for mission maker configuration."
+      ],
+      "projectChallenges": [
+        {
+          "challenge": "Dynamic Firing Position Evaluation",
+          "challengeDescription": "Finding positions that are tactically viable — flat enough to deploy on, with clear overhead and horizontal clearance, away from roads and dense terrain — required checking multiple criteria efficiently across a potentially large area.",
+          "solutionDescription": "Built a grid-based evaluator with early-exit logic. Each candidate position is tested against slope, water, road proximity, tree density, and multiple raycasts for line-of-sight clearance. Positions that pass all checks are cached on the module for the team to select from at runtime."
+        },
+        {
+          "challenge": "Integration with BIS Static Weapon System",
+          "challengeDescription": "Arma 3's built-in static weapon pack/unpack system uses asynchronous event callbacks, making it difficult to sequence reliably with the rest of the behavior loop.",
+          "solutionDescription": "Registered event handlers on the StaticWeaponUnpacked and StaticWeaponPacked events and used a polling mechanism on a shared namespace variable to synchronize the behavior loop with the BIS function's completion."
+        }
+      ],
+      "projectOutcomes": [
+        {
+          "title": "Fully Functional AI Behavior",
+          "description": "Mortar teams autonomously complete full fire mission cycles — including terrain evaluation, deployment, ranging, fire-for-effect, takedown, and relocation — without any scripted waypoints."
+        },
+        {
+          "title": "Mission Editor Ready",
+          "description": "ZEN module integration makes the system accessible to mission makers without any scripting knowledge."
+        }
+      ],
+      "projectLessons": [
+        "Asynchronous event-driven APIs in game engines require careful synchronization when you need sequential behavior — polling shared state is sometimes the pragmatic solution.",
+        "Simulating realistic tactics in game AI is as much a design problem as a coding problem — understanding how mortar teams actually operate was a prerequisite to modeling it.",
+        "Raycasting for spatial queries is powerful but expensive; early-exit conditions and result caching are essential to keep evaluation time acceptable."
+      ],
+      "images": [
+        {
+          "url": "/project_pictures/MortarModSpawnDiag.jpg",
+          "alt": "Mortar team spawn dialog"
+        },
+        {
+          "url": "/project_pictures/MortarModAODiag.jpg",
+          "alt": "Area of operations module dialog"
+        },
+        {
+          "url": "/project_pictures/MortarModTargetDiag.jpg",
+          "alt": "Target module dialog"
+        },
+        {
+          "url": "/project_pictures/MortarModDeploying.jpg",
+          "alt": "Mortar team deploying in the field"
+        },
+        {
+          "url": "/project_pictures/MortarModFiring.jpg",
+          "alt": "Mortar team firing a mission"
+        },
+        {
+          "url": "/project_pictures/MortarModImpact.jpg",
+          "alt": "Fire mission impact"
+        }
+      ]
+    },
+    {
       "id": 2,
       "projectTitle": "Portfolio Website",
       "projectOverview": "This portfolio, built with Angular SSR and self-hosted on a repurposed desktop running Linux. Served via a Node.js container behind an Nginx reverse proxy with Let's Encrypt TLS. Deployed automatically via a GitHub Actions pipeline on every push to main.",
