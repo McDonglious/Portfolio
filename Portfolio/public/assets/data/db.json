@@ -88,16 +88,20 @@
     {
       "id": 6,
       "projectTitle": "Point Cloud Annotation in VR",
-      "projectOverview": "A VR application for annotating LiDAR point clouds, built in Unity with C#. Designed for a real client as part of a school project. Users annotate 3D street scan data in an immersive environment, with height-based color mapping and automatic bounding box generation.",
+      "projectOverview": "A WebXR application for annotating LiDAR point clouds, built with TypeScript, React, and Three.js. Designed for a real client as part of a school project. Users annotate 3D street scan data in an immersive VR environment, with height-based color mapping, automatic bounding box generation, and virtual cameras aligned to the original capture rig.",
       "projectBackground": "The client needed a faster and more accurate way to annotate LiDAR point cloud data captured from vehicles driving through streets — data used to train autonomous vehicle AI models. Traditional 2D annotation tools were slow and unintuitive for inherently 3D data. Our team of three built a VR environment where annotators could work directly in 3D space.",
       "projectFeatures": [
         {
           "title": "Automatic Bounding Boxes",
-          "description": "Users brush over a group of points and the system automatically calculates and draws a correctly fitted bounding box around them, rather than requiring manual box construction."
+          "description": "Users brush over a group of points and the system automatically fits an oriented bounding box around them using 2D PCA to determine the optimal yaw alignment, rather than requiring manual box construction."
         },
         {
           "title": "Height-Based Color Mapping",
           "description": "Points are colored by their height off the ground, making it easier to visually distinguish roads, vehicles, and other objects in the scan."
+        },
+        {
+          "title": "Virtual Camera Alignment",
+          "description": "The vehicle's real cameras are reconstructed in the 3D scene using extrinsic calibration data (position and rotation) and intrinsic calibration data (focal length and principal point), with a custom projection matrix so each virtual camera's frustum matches the real lens exactly."
         },
         {
           "title": "Annotation Tools",
@@ -109,29 +113,35 @@
         }
       ],
       "projectTechnologies": [
-        "Unity",
-        "C#",
-        "VR Development",
-        "Point Cloud Processing",
-        "3D Rendering"
+        "TypeScript",
+        "React",
+        "Three.js",
+        "WebXR",
+        "Point Cloud Processing"
       ],
       "projectDevelopmentProcess": [
         "Worked directly with the client to understand their annotation workflow and data format.",
-        "Loaded and rendered LiDAR point cloud data inside a Unity VR environment.",
+        "Loaded and rendered LiDAR point cloud data inside a Three.js WebXR environment.",
         "Implemented height-based color mapping to make the 3D structure of the data easier to read.",
-        "Built the brush selection system and automatic bounding box generation.",
-        "Resolved a coordinate system mismatch between the LiDAR data format and Unity's axis conventions."
+        "Built the brush selection system and automatic oriented bounding box generation using 2D PCA.",
+        "Resolved a coordinate system mismatch between the LiDAR data format and WebXR's axis conventions.",
+        "Reconstructed the vehicle's camera rig in 3D using extrinsic and intrinsic calibration data, building a custom projection matrix per camera."
       ],
       "projectChallenges": [
         {
           "challenge": "Automatic Bounding Box Generation",
-          "challengeDescription": "Users needed to be able to select a group of points by brushing over them and have the system draw a correctly fitted bounding box automatically, rather than constructing it manually.",
-          "solutionDescription": "Built an algorithm that takes the selected point set and computes the minimum bounding box in 3D space, accounting for the orientation of the point cluster."
+          "challengeDescription": "Users needed to be able to select a group of points by brushing over them and have the system draw a correctly fitted bounding box automatically. Point clusters representing vehicles or pedestrians are rarely axis-aligned, so a simple min/max box produced poor results.",
+          "solutionDescription": "Implemented an oriented bounding box algorithm using 2D PCA on the horizontal plane to determine the principal axis of the point distribution. The optimal yaw angle is extracted from the primary eigenvector, the points are rotated into that aligned space, a standard AABB is computed, and the result is rotated back to world space. Pitch and roll are intentionally left at zero since objects in vehicle-captured LiDAR sit flat on the ground."
         },
         {
           "challenge": "Coordinate System Mismatch",
-          "challengeDescription": "The LiDAR point cloud data used a different axis convention than Unity — the Y axis in the point cloud data mapped to the X axis in Unity's coordinate system. This caused the entire scene to load incorrectly until the discrepancy was identified.",
-          "solutionDescription": "Wrote a transformation layer that remaps the incoming point cloud coordinates to Unity's coordinate system before rendering, so the rest of the application could work with correct spatial data."
+          "challengeDescription": "The LiDAR point cloud data uses a Z-up coordinate system (Z is vertical, Y is forward) while WebXR uses a Y-up system (Y is vertical, Z is backward). A naive axis swap produced a mirrored scene rather than a correct one.",
+          "solutionDescription": "Wrote a coordinate conversion layer that maps the backend's Z to WebXR's Y, and negates the backend's Y into WebXR's Z. The negation was the non-obvious part — without it the scene loaded but was mirrored along one axis. The same conversion applies to annotation boxes being saved back, with an inverse transform."
+        },
+        {
+          "challenge": "Camera Rig Reconstruction",
+          "challengeDescription": "The point cloud data was captured by cameras mounted on a vehicle, and the annotation tool needed to show those camera views in the correct positions in the 3D scene so annotators could cross-reference image data with point geometry.",
+          "solutionDescription": "Loaded each camera's extrinsic calibration (position and quaternion rotation) and applied the same coordinate conversion as the point cloud so cameras land in the correct world position. For the projection, built a custom Three.js projection matrix from the intrinsic calibration data (focal lengths and principal point), giving each virtual camera a frustum that matches the real physical lens exactly."
         }
       ],
       "projectOutcomes": [
@@ -145,7 +155,7 @@
         }
       ],
       "projectLessons": [
-        "Coordinate system conventions differ between tools and formats — always verify axis mapping when integrating external data sources.",
+        "Coordinate system conventions differ between data formats and rendering environments — a naive axis swap isn't always enough, negation matters too.",
         "Working with a real client changes the dynamic considerably; requirements are less defined up front and change as they see the product evolve.",
         "Automatic geometry fitting (bounding boxes) is a more interesting problem than it first appears when the point clusters aren't axis-aligned."
       ],
@@ -167,12 +177,12 @@
     {
       "id": 1,
       "projectTitle": "Poker Game: Online Multiplayer Poker",
-      "projectOverview": "A fully functional online poker platform with a .NET 9 backend and React + Vite frontend. Supports real-time multiplayer gameplay via SignalR, user accounts, configurable tables, and complex pot distribution logic including side pots.",
+      "projectOverview": "A fully functional online poker platform with a Java Spring Boot backend and React + Vite frontend. Supports real-time multiplayer gameplay via WebSockets, user accounts, configurable tables, and complex pot distribution logic including side pots.",
       "projectBackground": "A school team project (team of 4-5) where I was primarily responsible for the backend. The goal was a working online poker platform with real-time gameplay, user accounts, and correct poker rules including the parts most implementations get wrong — side pots.",
       "projectFeatures": [
         {
-          "title": "Real-Time Gameplay via SignalR",
-          "description": "All game state updates are pushed to connected clients in real time using SignalR, keeping every player's view in sync."
+          "title": "Real-Time Gameplay via WebSockets",
+          "description": "All game state updates are pushed to connected clients in real time over WebSockets, keeping every player's view in sync."
         },
         {
           "title": "Side Pot Logic",
@@ -188,16 +198,16 @@
         }
       ],
       "projectTechnologies": [
-        ".NET 9",
-        "SignalR",
+        "Java",
+        "Spring Boot",
         "React",
         "Vite",
         "PostgreSQL",
-        "Identity Server",
+        "Keycloak",
         "Google Cloud"
       ],
       "projectDevelopmentProcess": [
-        "Designed the backend architecture in .NET 9 with PostgreSQL for persistence and Identity Server for authentication.",
+        "Designed the backend architecture in Java with Spring Boot and PostgreSQL for persistence.",
         "Implemented real-time game state synchronization using SignalR.",
         "Built the poker game logic including hand evaluation, betting rounds, and pot distribution.",
         "Implemented side pot calculation for all-in scenarios.",
